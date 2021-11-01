@@ -1,0 +1,76 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#rodape{
+    background-color: #3E0306;
+    padding: 20px;
+    color: #fff;
+    height: 16em;
+}
+
+#rodape .title_rodape{
+    border-bottom: 3px solid #fff;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#rodape .rodape-col-1{
+    list-style: none;
+    font-size: 13px;
+    width: 100%;
+}
+
+#rodape .rodape-col-1 li{
+    padding-bottom: 15px;
+}
+
+#rodape .rodape-col-1 li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#rodape .rodape-col-1 li a .icon{
+    font-size: 20px;
+}
+
+#rodape .sub_title_rodape{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+#rodape .rodape-col-2{
+    list-style: none;
+    width: 100%;
+    margin-left: 40px;
+}
+
+#rodape .rodape-col-2 .title_rodape{
+    border-bottom: 3px solid #fff;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: right;
+}
+
+#rodape .rodape-col-2 #redes-sociais li{
+    display: inline-block;
+    list-style: none;
+    
+}
+
+div{
+    /*display: inline-block;*/
+    width: 48%;
+    float: left;
+}
+
+.logos-rodape{
+    height: 50px;
+    margin-top: 10px;
+}
+
+#rodape .rodape-col-2 li .logos-rodape{
+    float: right;
+}
