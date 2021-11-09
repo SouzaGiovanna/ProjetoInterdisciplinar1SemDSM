@@ -57,7 +57,23 @@
 #rodape .rodape-col-2 #redes-sociais li{
     display: inline-block;
     list-style: none;
-    
+}
+
+#redes-sociais{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+#rodape .rodape-col-2 #redes-sociais li a img{
+    width: 60%;
+    margin-top: 5%;
+    margin-bottom: 100%;
+}
+
+#rodape .rodape-col-2 li p{
+    font-size: 13px;
+    margin-bottom: 3%;
 }
 
 div{
