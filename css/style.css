@@ -32,6 +32,20 @@
     color: #fff;
 }
 
+#rodape .rodape-col-1 li a:hover {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: 0.7s;
+}
+
+#rodape .rodape-col-1 li a:hover .icon{
+    text-decoration: none;
+    color: #fff;
+    font-size: 23px;
+    transition: 0.7s;
+}
+
 #rodape .rodape-col-1 li a .icon{
     font-size: 20px;
 }
@@ -69,6 +83,13 @@
     width: 60%;
     margin-top: 5%;
     margin-bottom: 100%;
+}
+
+#rodape .rodape-col-2 #redes-sociais li a:hover img{
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 100%;
+    transition: 0.5s;
 }
 
 #rodape .rodape-col-2 li p{
