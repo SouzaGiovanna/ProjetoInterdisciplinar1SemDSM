@@ -8,7 +8,7 @@
     background-color: #3E0306;
     padding: 20px;
     color: #fff;
-    height: 16em;
+    height: 12em;
 }
 
 #rodape .title_rodape{
@@ -98,16 +98,68 @@
 }
 
 div{
-    /*display: inline-block;*/
     width: 48%;
     float: left;
 }
 
-.logos-rodape{
-    height: 50px;
-    margin-top: 10px;
+/*Media Queries*/
+
+/*Rodapé*/
+@media screen and (max-width:665px){
+    #rodape{
+        height: 14em;
+    }
+
+    #rodape .rodape-col-2 li p{
+        font-size: 13px;
+        margin-bottom: 10%;
+    }
 }
 
-#rodape .rodape-col-2 li .logos-rodape{
-    float: right;
+@media screen and (max-width:550px){
+    #rodape{
+        height: 15em;
+    }
+}
+
+@media screen and (max-width:500px){
+    #rodape{
+        height: 22em;
+    }
+
+    div{
+        width: 100%;
+        padding-left: 0px;
+        display: block;
+    }
+
+    #rodape .rodape-col-2 li p{
+        font-size: 13px;
+        margin-bottom: 1%;
+    }
+
+    #rodape .rodape-col-2 #redes-sociais li a img{
+        width: 60%;
+        margin-top: 5%;
+        margin-bottom: 80%;
+    }
+
+    #rodape .rodape-col-2{
+        list-style: none;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #rodape .rodape-col-2 .title_rodape{
+        border-bottom: 3px solid #fff;
+        margin-bottom: 10px;
+        font-size: 14px;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:395px){
+    #rodape .rodape-col-2{
+        margin-top: 10%;
+    }
 }
