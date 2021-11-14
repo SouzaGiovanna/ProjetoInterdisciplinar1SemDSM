@@ -1,7 +1,84 @@
 *{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Menu*/
+header{
+    background-color: #ca1313;
+    padding: 12px 12px 0px 12px;
+}
+
+#logos{
+    margin-bottom: 10px;
+
+    /*Essas propriedades servem pra deixar os logos em extremidades opostas da página*/
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+#logo_fatec, #logo_cps{
+    height: 50px;
+}
+
+#nav{
+    width: 100%;
+}
+
+#menu{
+    /*Altura e largura dos itens do menu*/
+    line-height: 20px;
+    font-weight: 500;
+
+    /*Espaçar os itens de forma uniforme pelo tamanho da página*/
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    /*Outras configurações*/
+    list-style-type: none;
+}
+
+.menu_item{
+    display: inline-block;
+    position: relative;
+}
+
+.menu_item a{
+    padding: 12px 14px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    font-size: 18px;
+}
+
+#submenu{
+    text-transform: none;
+    display: none;
+    position: absolute;
+    width: 220px;
+    float: left;
+    background-color: #ca1313;
+    list-style-type: none;
+}
+
+.menu_item:hover{
+    background-color: #750e0e;
+    transition: 0.5s;
+}
+
+.menu_item:hover #submenu{
+    display: block;
+}
+
+.menu_item_submenu:hover{
+    background-color: #750e0e;
+    border-left: 4px solid #fff;
+    transition: 0.5s;
 }
 
 #rodape{
