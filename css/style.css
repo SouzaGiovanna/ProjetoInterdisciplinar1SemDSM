@@ -8,6 +8,7 @@
 header{
     background-color: #ca1313;
     padding: 12px 12px 0px 12px;
+    min-height: 20%;
 }
 
 #logos{
@@ -81,6 +82,12 @@ header{
     transition: 0.5s;
 }
 
+/*conteúdo*/
+main{
+    min-height: 317px;
+}
+
+/*rodapé*/
 #rodape{
     background-color: #3E0306;
     padding: 20px;
@@ -174,7 +181,7 @@ header{
     margin-bottom: 3%;
 }
 
-div{
+#rodape div{
     width: 48%;
     float: left;
 }
