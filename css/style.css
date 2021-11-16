@@ -13,7 +13,7 @@
     padding-bottom: 5px;
 }
 #atalhos{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1em;
     list-style: none;
     /*padding-left: 1%;*/
@@ -142,6 +142,7 @@ header{
     text-decoration: underline;
 }
 /* Fim BreadCrumb */
+
 /*conteúdo*/
 main{
     min-height: 574px;
@@ -151,7 +152,7 @@ main{
 
 
 .npaccess, .npfaq{
-    font-size: 16px;
+    font-size: 1em;
     padding-left: 2%;
     padding-bottom: 8px;
     text-align: justify;
@@ -169,7 +170,7 @@ main{
 
 .faqmenuli{
     padding-left: 3%;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .faqsubmenuli{
@@ -180,6 +181,7 @@ main{
 
 #menu_faq{
     list-style: none;
+    padding-top: 2%;
 }
 
 #menu_faq li{
