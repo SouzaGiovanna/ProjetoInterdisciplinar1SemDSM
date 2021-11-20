@@ -8,6 +8,53 @@
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
+        <header>
+            <div id="acessibilidade">
+                <ul id="atalhos">
+                    <li><a href="#conteudo" accesskey="1" title="Ir diretamente para o conteúdo">Ir para o Conteúdo [1]</a></li>
+                    <li><a href="#menu" accesskey="2" title="Ir diretamente para o menu">Ir para o Menu [2]</a></li>
+                    <li><a href="#rodape" accesskey="3" title="Ir diretamente para o rodapé"> Ir para o Rodapé [3]</a></li>
+    
+                    <li id="pgaccess"><a href="./acessibilidade.html" title="Ir para a página de Acessibilidade">ACESSIBILIDADE</a></li>
+                    <li id="contrastep"><a href="javascript:void(0);" id="contraste">CONTRASTE PRETO</a></li>
+                    <li id="scontraste"><a href="javascript:void(0);" id="sem_contraste">SEM CONTRASTE</a></li>
+                    <li id="fonteA"><a href="javascript:void(0);" id="aumentar">A+</a></li>
+                    <li id="fontea"><a href="javascript:void(0);" id="diminuir">A-</a></li>
+                </ul>
+            </div>
+            <div id="logos">
+                <img src="../imagens/logo_fatec_branco.png" id="logo_fatec">
+                <img src="../imagens/2020_logo_cps_gov_sec_versao_horizontal.png" id="logo_cps">
+            </div>
+    
+            <nav id="nav">
+                <ul id="menu">
+                    <li class="menu_item"><a href="index.html">Início</a></li>
+                    <li class="menu_item"><a href="abrir_chamado.html">Abrir Chamado</a></li>
+                    <li class="menu_item"><a href="javascript:void(0);">Acompanhar Chamados</a>
+                        <ul id="submenu">
+                            <li class="menu_item_submenu"><a href="./acompanhamento_equipamento.html">Pesquisar Pelo Equipamento</a></li>
+                            <li class="menu_item_submenu"><a href="./acompanhamento_todos.html">Visualizar Todos</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_item"><a href="javascript:void(0);">Meus Chamados</a></li>
+                    <li class="menu_item"><a href="faq.html">FAQ</a></li>
+                    <li class="menu_item"><a href="javascript:void(0);">Perfil</a></li>
+                    <li class="menu_item"><a href="login_cadastro.html">Login</a></li>
+                    <li class="menu_item"><a href="javascript:void(0);">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <!--Breadcrumb-->
+            <ul class="breadcrumb">
+                <li><a href="index.html">Início</a></li>
+                <li>login_cadastro</li>
+            </ul>
+            <!--Fim do BreadCrumb-->
+        </main>
+        
         <footer id="rodape">
             <div>
                 <p class="title_rodape">Como nos encontrar?</p></li>
