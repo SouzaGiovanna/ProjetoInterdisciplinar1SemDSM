@@ -4,6 +4,41 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Formatação do menu de acessibilidade */
+#acessibilidade{
+    width: 100%;
+    height: auto;
+    background-color: #ca1313;
+    margin: auto;
+    padding-bottom: 5px;
+}
+#atalhos{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    list-style: none;
+    /*padding-left: 1%;*/
+}
+#atalhos li{
+    display: inline;
+}
+#atalhos li a{
+    color: #fff;
+}
+#atalhos li a:hover{
+    color: #3e3e3e;
+}
+#pgaccess{
+    padding-left: 40%;
+}
+ul #contrastep, ul #scontraste, ul #fonteA, ul #fontea{
+    padding-left: 8px;
+}
+/* Fim da formatação do menu de acessibilidade */
+
+h1{
+    text-align: center;
+}
+
 /*Menu*/
 header{
     background-color: #ca1313;
@@ -82,9 +117,92 @@ header{
     transition: 0.5s;
 }
 
+/* Breadcrumb */
+.breadcrumb{
+    padding-left: 2%;
+    list-style: none;
+}
+.breadcrumb li{
+    display: inline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+    color: #000;
+}
+.breadcrumb li a{
+    color: #3e3e3e;
+    text-decoration: none;
+}
+.breadcrumb li+li:before{
+    content: "/\00a0";
+    padding: 6px;
+    color: #000;
+}
+.breadcrumb li a:hover{
+    color: #000;
+    text-decoration: underline;
+}
+/* Fim BreadCrumb */
+
 /*conteúdo*/
 main{
-    min-height: 317px;
+    min-height: 574px;
+}
+
+/* Paragrafo de Acessibilidade */
+
+
+.npaccess, .npfaq{
+    font-size: 1em;
+    padding-left: 2%;
+    padding-bottom: 8px;
+    text-align: justify;
+    font-weight: bold;
+}
+.paccess, .pfaq, .faqmenuli{
+    font-size: 1em;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 8px;
+    text-align: justify;
+}
+
+/* Conteúdo FAQ */
+
+.faqmenuli{
+    padding-left: 3%;
+    font-size: 1.1em;
+}
+
+.faqsubmenuli{
+    padding-left: 8%;
+    padding-top: 10px;
+    text-align: justify;
+}
+
+#menu_faq{
+    list-style: none;
+    padding-top: 2%;
+}
+
+#menu_faq li{
+    position: relative;
+}
+
+#menu_faq li .submenu_faq{
+    position: static;
+    display: none;
+    height: auto;
+}
+
+#menu_faq li:hover img{
+    transition: 1s;
+    transform: rotate(90deg);
+}
+
+#menu_faq li:hover ul{
+    position: relative;
+    display: block;
+    list-style: none;
 }
 
 /*rodapé*/
