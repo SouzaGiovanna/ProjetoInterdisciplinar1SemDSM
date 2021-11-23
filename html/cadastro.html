@@ -40,19 +40,49 @@
                 <li class="menu_item"><a href="javascript:void(0);">Meus Chamados</a></li>
                 <li class="menu_item"><a href="faq.html">FAQ</a></li>
                 <li class="menu_item"><a href="javascript:void(0);">Perfil</a></li>
-                <li class="menu_item"><a href="login_cadastro.html">Login</a></li>
+                <li class="menu_item"><a href="cadastro.html">Login</a></li>
                 <li class="menu_item"><a href="javascript:void(0);">Logout</a></li>
             </ul>
         </nav>
         </header>
 
-        <main>
-        <!--Breadcrumb-->
-        <ul class="breadcrumb">
-            <li><a href="index.html">Início</a></li>
-            <li>login_cadastro</li>
-        </ul>
-        <!--Fim do BreadCrumb-->
+        <main id="tela-maior">
+            <!--Breadcrumb-->
+            <ul class="breadcrumb">
+                <li><a href="index.html">Início</a></li>
+                <li>Cadastro</li>
+            </ul>
+            <!--Fim do BreadCrumb-->
+
+            <!--Tela de Cadastro-->
+                <h1>Faça seu Cadastro</h1>
+
+                <form name="cadastro" id="form" method="POST">
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+
+                        <label for="nome" class="required">Nome</label><br>
+                        <input type="text" name="nome" id="nome" placeholder="Nome Completo"><br><br>
+
+                        <label for="registro" class="required">Registro na Fatec</label>
+
+                        <label for="registro_txt" class="required">Registro</label><br>
+
+                        <select name="registro" id="registro">
+                            <option value="" selected disabled>Selecione um Tipo de Registro</option>
+                            <option value="RA">RA</option>
+                            <option value="RM">RM</option>
+                        </select>
+
+                        <input type="text" name="registro_txt" id="registro_txt" placeholder="Digite aqui seu";> <!--Colocar aq no JS qual é o registro selecionado-->
+
+                        <label for="email" class="required">Email Institucional</label><br>
+                        <input type="text" name="email" id="email" placeholder="Email Institucional">
+                        <img src="../imagens/duvida.png" id="duvida"><br><br>
+                        <input type="submit" name="enviar" id="enviar" value="Enviar"> <input type="reset" name="limpar" id="limpar" value="Limpar">
+                    </fieldset>
+                </form>
+            <!--Fim da Tela de Cadastro-->
         </main>
       
         <footer id="rodape">
