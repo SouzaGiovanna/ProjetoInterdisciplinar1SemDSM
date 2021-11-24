@@ -149,9 +149,9 @@ main{
     min-height: 574px;
 }
 
-/*#tela-maior{
-    min-height: 470px;
-}*/
+#tela-maior{
+    min-height: 760px;
+}
 
 /*Formulário*/
 #form{
@@ -160,13 +160,36 @@ main{
     position: absolute;
 }
 
-input{
+input, select{
     width: 99%;
     height: 40px;
     background-color: #f3f3f3b0;
     color: #000;
     border-radius: 10px;
     padding: 5px;
+}
+
+#label-registro{
+    margin-right: 5%;
+}
+
+#senha_label{
+    margin-right: 40%;
+}
+
+select{
+    width: auto;
+    height: 50px;
+    margin-right: 2%;
+}
+
+#registro_txt{
+    width: 70%;
+}
+
+#senha, #conf_senha{
+    width: 45.2%;
+    margin-top: 1.5%;
 }
 
 #email{

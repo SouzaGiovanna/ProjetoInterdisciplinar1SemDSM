@@ -64,7 +64,7 @@
                         <label for="nome" class="required">Nome</label><br>
                         <input type="text" name="nome" id="nome" placeholder="Nome Completo"><br><br>
 
-                        <label for="registro" class="required">Registro na Fatec</label>
+                        <label for="registro" class="required" id="label-registro">Registro na Fatec</label>
 
                         <label for="registro_txt" class="required">Registro</label><br>
 
@@ -74,11 +74,19 @@
                             <option value="RM">RM</option>
                         </select>
 
-                        <input type="text" name="registro_txt" id="registro_txt" placeholder="Digite aqui seu";> <!--Colocar aq no JS qual é o registro selecionado-->
+                        <input type="number" name="registro_txt" id="registro_txt" placeholder="Digite aqui seu";> <!--Colocar aq no JS qual é o registro selecionado-->
+                        <img src="../imagens/duvida.png" id="duvida"><br><br>
 
                         <label for="email" class="required">Email Institucional</label><br>
                         <input type="text" name="email" id="email" placeholder="Email Institucional">
                         <img src="../imagens/duvida.png" id="duvida"><br><br>
+
+                        <label for="senha" class="required" id="senha_label">Senha</label>
+                        <label for="conf_senha" class="required">Confirmar Senha</label><br>
+
+                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+                        <input type="password" name="conf_senha" id="conf_senha" placeholder="Confirme sua senha"><br><br>
+
                         <input type="submit" name="enviar" id="enviar" value="Enviar"> <input type="reset" name="limpar" id="limpar" value="Limpar">
                     </fieldset>
                 </form>
