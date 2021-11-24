@@ -65,22 +65,49 @@
 
                 <fieldset>
                     <legend>Informações do Chamado</legend>
-                    <label for="idChamado">Id Chamado</label> <input type="text" name="idChamado" id="idChamado" disabled value="20">
 
-                    <label for="statusChamado">Status</label> <input type="text" name="statusChamado" id="statusChamado" disabled value="??">
-
-                    <label for="localAmbiente">Local</label> <input type="text" name="localAmbiente" id="localAmbiente" disabled value="LABORATÓRIO - 01"><br><br>
-
-                    <label for="dtAbertura">Data Abertura</label> <input type="text" name="dtAbertura" id="dtAbertura" disabled value="27/11/2021">
-
-                    <label for="dtAtulizacao">Data Atualização</label> <input type="text" name="dtAtulizacao" id="dtAtualizacao" disabled value="27/11/2021">
-
-                    <label for="dtPrevisao">Previsão de Solução</label> <input type="text" name="dtPrevisao" id="dtPrevisao" disabled value="27/11/2021"><br><br>
-
-                    <label for="tipoEquipamento">Tipo de Equipamento</label> <input type="text" name="tipoEquipamento" id="tipoEquipamento" disabled value="COMPUTADOR">
-
-                    <label for="nomeEquipamento">Nome do Equipamento</label> <input type="text" name="nomeEquipamento" id="nomeEquipamento" disabled value="PC_FATEC_ZL_001"><br><br>
-
+                    <table>
+                        <tr>
+                            <td class="td1">
+                                <label for="idChamado">Id Chamado</label><br>
+                                <input type="text" name="idChamado" id="idChamado" disabled value="20">
+                            </td>
+                            <td class="td2">
+                                <label for="statusChamado">Status</label><br>
+                                <input type="text" name="statusChamado" id="statusChamado" disabled value="??">
+                            </td>
+                            <td class="td3">
+                                <label for="localAmbiente">Local</label><br>
+                                <input type="text" name="localAmbiente" id="localAmbiente" disabled value="LABORATÓRIO - 01">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">
+                                <label for="dtAbertura">Data Abertura</label><br>
+                                <input type="text" name="dtAbertura" id="dtAbertura" disabled value="27/11/2021">
+                            </td>
+                            <td class="td2">
+                                <label for="dtAtulizacao">Data Atualização</label><br>
+                                <input type="text" name="dtAtulizacao" id="dtAtualizacao" disabled value="27/11/2021">
+                            </td>
+                            <td class="td3">
+                                <label for="dtPrevisao">Previsão de Solução</label><br>
+                                <input type="text" name="dtPrevisao" id="dtPrevisao" disabled value="27/11/2021">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">
+                                <label for="tipoEquipamento">Tipo de Equipamento</label><br>
+                                <input type="text" name="tipoEquipamento" id="tipoEquipamento" disabled value="COMPUTADOR">
+                            </td>
+                            <td class="td2"></td>
+                            <td class="td3">
+                                <label for="nomeEquipamento">Nome do Equipamento</label><br>
+                                <input type="text" name="nomeEquipamento" id="nomeEquipamento" disabled value="PC_FATEC_ZL_001">
+                            </td>
+                        </tr>
+                    </table>
+                    <br><br>
                     <label for="descricaoSolicitacao">Descrição da Solicitação</label><br>
                     <textarea name="descricaoSolicitacao" id="descricaoSolicitacao" cols="50" rows="20" disabled>
                         Durante a utilização do Computador, foi percebido que por 2 vezes ocorreu interrupção do sistema e deu tela azul. Poderiam verificar se há alguma ação que possa ser executada pela equipe de TI.

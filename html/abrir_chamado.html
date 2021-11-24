@@ -67,26 +67,31 @@
 
                 <fieldset>
                     <legend>Sobre seu problema</legend>
-                        <label for="localAmbiente" class="required">Local</label><br>
-                        <select name="localAmbiente" id="localAmbiente">
-                            <option value="" selected disabled>Selecione um Local</option>
-                            <option value="laboratorio">LABORATÓRIO</option>
-                            <option value="secretatia">SECRETARIA</option>
-                        </select><br><br>
-
-                        <label for="tipoEquipamento" class="required">Tipo de Equipamento</label><br>
-                        <select name="tipoEquipamento" id="tipoEquipamento">
-                            <option value="" selected disabled>Selecione tipo de Equipamento</option>
-                            <option value="computador">COMPUTADOR</option>
-                            <option value="mouse">MOUSE</option>
-                            <option value="impressora">IMPRESSORA</option>
-                            <option value="projetor">PROJETOR MULTIMIDIA</option>
-                            <option value="software">SOFTWARE</option>
-                        </select><br><br>
-
-                        <label for="nomeEquipamento" class="required">Nome do Equipamento</label><br>
-                        <input type="text" name="nome" id="nomeEquipamento" placeholder="Nome do Equipamento"><br><br>
-                        
+                    <table>
+                        <td class="td1">
+                            <label for="localAmbiente" class="required">Local</label><br>
+                            <select name="localAmbiente" id="localAmbiente">
+                                <option value="" selected disabled>Selecione um Local</option>
+                                <option value="laboratorio">LABORATÓRIO</option>
+                                <option value="secretatia">SECRETARIA</option>
+                            </select><br><br>
+                        </td>
+                        <td class="td2">
+                            <label for="tipoEquipamento" class="required">Tipo de Equipamento</label><br>
+                            <select name="tipoEquipamento" id="tipoEquipamento">
+                                <option value="" selected disabled>Selecione tipo de Equipamento</option>
+                                <option value="computador">COMPUTADOR</option>
+                                <option value="mouse">MOUSE</option>
+                                <option value="impressora">IMPRESSORA</option>
+                                <option value="projetor">PROJETOR MULTIMIDIA</option>
+                                <option value="software">SOFTWARE</option>
+                            </select><br><br>
+                        </td>
+                        <td class="td3">
+                            <label for="nomeEquipamento" class="required">Nome do Equipamento</label><br>
+                            <input type="text" name="nome" id="nomeEquipamento" placeholder="Nome do Equipamento"><br><br>
+                        </td>
+                    </table>                        
                         <label for="descricaoSolicitacao" class="required">Descrição da Solicitação</label><br>
                         <textarea name="descricaoSolicitacao" id="descricaoSolicitacao" cols="50" rows="20" placeholder="Descreva aqui sua solicitação com os detalhes desejados."></textarea>
                 </fieldset>
