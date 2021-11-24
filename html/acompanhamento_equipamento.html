@@ -40,7 +40,7 @@
                     <li class="menu_item"><a href="javascript:void(0);">Meus Chamados</a></li>
                     <li class="menu_item"><a href="faq.html">FAQ</a></li>
                     <li class="menu_item"><a href="javascript:void(0);">Perfil</a></li>
-                    <li class="menu_item"><a href="login_cadastro.html">Login</a></li>
+                    <li class="menu_item"><a href="cadastro.html">Login</a></li>
                     <li class="menu_item"><a href="javascript:void(0);">Logout</a></li>
                 </ul>
             </nav>
@@ -54,6 +54,46 @@
             <li>Acompanhamento por Equipamento</li>
         </ul>
         <!--Fim do BreadCrumb-->
+
+            <form name="pesquisar_id_ou_equipamento" id="pesquisar_id_ou_equipamento" action="onsubit" method="post">
+                <fieldset>
+                    <legend>Pesquisar</legend>
+                    <label for="pesquisar_id_ou_equipamento" class="required">Digite o ID do Chamado ou Equipamento para Pesquisar:</label><br>
+                    <input type="text" name="nome" id="pesquisar" placeholder="Digite o ID Chamado ou do Equipamento"><br><br>
+                </fieldset>
+                <input type="submit" name="pesquisar" id="pesquisar" value="Pesquisar"> <input type="reset" name="limpar" id="limpar" value="Limpar">
+
+                <fieldset>
+                    <legend>Informações do Chamado</legend>
+                    <label for="idChamado">Id Chamado</label> <input type="text" name="idChamado" id="idChamado" disabled value="20">
+
+                    <label for="statusChamado">Status</label> <input type="text" name="statusChamado" id="statusChamado" disabled value="??">
+
+                    <label for="localAmbiente">Local</label> <input type="text" name="localAmbiente" id="localAmbiente" disabled value="LABORATÓRIO - 01"><br><br>
+
+                    <label for="dtAbertura">Data Abertura</label> <input type="text" name="dtAbertura" id="dtAbertura" disabled value="27/11/2021">
+
+                    <label for="dtAtulizacao">Data Atualização</label> <input type="text" name="dtAtulizacao" id="dtAtualizacao" disabled value="27/11/2021">
+
+                    <label for="dtPrevisao">Previsão de Solução</label> <input type="text" name="dtPrevisao" id="dtPrevisao" disabled value="27/11/2021"><br><br>
+
+                    <label for="tipoEquipamento">Tipo de Equipamento</label> <input type="text" name="tipoEquipamento" id="tipoEquipamento" disabled value="COMPUTADOR">
+
+                    <label for="nomeEquipamento">Nome do Equipamento</label> <input type="text" name="nomeEquipamento" id="nomeEquipamento" disabled value="PC_FATEC_ZL_001"><br><br>
+
+                    <label for="descricaoSolicitacao">Descrição da Solicitação</label><br>
+                    <textarea name="descricaoSolicitacao" id="descricaoSolicitacao" cols="50" rows="20" disabled>
+                        Durante a utilização do Computador, foi percebido que por 2 vezes ocorreu interrupção do sistema e deu tela azul. Poderiam verificar se há alguma ação que possa ser executada pela equipe de TI.
+                    </textarea>
+
+                    <label for="descricaoSolucao">Descrição da Solução</label><br>
+                    <textarea name="descricaoSolucao" id="descricaoSolsolucao" cols="50" rows="20" disabled>
+                        O referido computador foi formatado e todos os softwares aplicativos foram reinstalados.
+                    </textarea>
+
+                </fieldset>
+
+            </form>
         </main>
 
         <footer id="rodape">
