@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sistema de Gerenciamento de Chamados</title>
         <link rel="stylesheet" href="../css/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="../js/aumentar.js"></script>
     </head>
     <body>
         <header>
@@ -72,13 +74,14 @@
                             <option value="" selected disabled>Selecione um Tipo de Registro</option>
                             <option value="RA">RA</option>
                             <option value="RM">RM</option>
-                        </select>
+                        </select><br><br>
 
                         <input type="text" name="registro_txt" id="registro_txt" placeholder="Digite aqui seu";> <!--Colocar aq no JS qual é o registro selecionado-->
 
-                        <label for="email" class="required">Email Institucional</label><br>
-                        <input type="text" name="email" id="email" placeholder="Email Institucional">
+                        <label for="email" class="required">E-mail Institucional</label><br>
+                        <input type="email" name="email" id="email" placeholder="Email Institucional">
                         <img src="../imagens/duvida.png" id="duvida"><br><br>
+                        
                         <input type="submit" name="enviar" id="enviar" value="Enviar"> <input type="reset" name="limpar" id="limpar" value="Limpar">
                     </fieldset>
                 </form>

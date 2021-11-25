@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sistema de Gerenciamento de Chamados</title>
         <link rel="stylesheet" href="../css/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="../js/aumentar.js"></script>
     </head>
     <body>
         <header>
@@ -54,6 +56,25 @@
             <li>Todos Chamados</li>
         </ul>
         <!--Fim do BreadCrumb-->
+
+        <h1>Acompanhamento de Chamado por ID</h1>
+
+            <form name="pesquisar_id_ou_equipamento" id="pesquisar_id_ou_equipamento" action="onsubit" method="post">
+                <fieldset>
+                    <legend>Pesquisar</legend>
+                    <label for="pesquisar_id_ou_equipamento" class="required">Digite o ID do Chamado ou Equipamento para Pesquisar:</label><br>
+                    <input type="text" name="nome" id="pesquisar" placeholder="Digite o ID Chamado ou do Equipamento"><br><br>
+                    <label for="filtro">Filtro</label><br>
+                    <input type="button" id="agaprovacao" value="Aguardando Aprovação">
+                    <input type="button" id="aberto" value="Aberto">
+                    <input type="button" id="agendado" value="Agendado">
+                    <input type="button" id="agresposta" value="Aguardando Resposta">
+                    <input type="button" id="concluido" value="Concluído">
+                    <input type="button" id="rejeitado" value="Rejeitado">
+                    <input type="button" id="cancelado" value="Cancelado">
+                </fieldset>
+                <input type="submit" name="pesquisar" id="pesquisar" value="Pesquisar"> <input type="reset" name="limpar" id="limpar" value="Limpar">
+            </form>
         </main>
 
         <footer id="rodape">
