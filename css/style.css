@@ -181,6 +181,14 @@ input{
     font-size: 1.2em;
 }
 
+#localAmbiente2,
+#tipoEquipamento2,
+#nomeEquipamento2{
+    width: 97%;
+    text-align: left;
+    font-size: 1.2em;
+}
+
 #email{
     width: 92%;
 }
