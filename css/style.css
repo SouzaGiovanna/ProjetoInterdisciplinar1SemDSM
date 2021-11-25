@@ -274,6 +274,44 @@ tr{
     width: 33%;
 }
 
+/* Formatando Botão */
+#agaprovacao,
+#aberto,
+#agresposta,
+#concluido,
+#rejeitado,
+#cancelado,
+#agendado{
+    width: 14%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#agaprovacao{
+    background-color: orange;
+}
+#aberto{
+    background-color: blue;
+}
+#agresposta{
+    background-color: coral;
+}
+#concluido{
+    background-color: green;
+}
+#rejeitado{
+    background-color: magenta;
+}
+#cancelado{
+    background-color: red;
+}
+#agendado{
+    background-color: grey;
+}
+
 /* Paragrafo de Acessibilidade */
 
 .npaccess, .npfaq{
