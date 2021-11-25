@@ -176,8 +176,9 @@ input{
 #dtPrevisao,
 #tipoEquipamento,
 #nomeEquipamento{
-    width: 95%;
+    width: 97%;
     text-align: center;
+    font-size: 1.2em;
 }
 
 #email{
@@ -244,12 +245,13 @@ select{
 }
 
 textarea{
-    width: 98%;
+    width: 99%;
     height: auto;
     background-color: #f3f3f3b0;
     color: #000;
     border-radius: 10px;
     padding: 5px;
+    font-size: 1.2em;
 }
 /* Formatação das tabelas */
 table{
@@ -263,7 +265,6 @@ tr{
 .td1, .td2, .td3{
     width: 33%;
 }
-
 
 /* Paragrafo de Acessibilidade */
 
