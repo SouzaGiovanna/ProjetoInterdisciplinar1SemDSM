@@ -62,33 +62,34 @@
                         <legend>Dados Pessoais</legend>
 
                         <label for="nome" class="required">Nome</label><br>
-                        <input type="text" name="nome" id="nome" placeholder="Nome Completo"><br><br>
+                        <input type="text" name="nome" id="nome" placeholder="Nome Completo" required><br><br>
 
                         <label for="registro" class="required" id="label-registro">Registro na Fatec</label>
 
                         <label for="registro_txt" class="required">Registro</label><br>
 
-                        <select name="registro" id="registro">
+                        <select name="registro" id="registro"  required>
                             <option value="" selected disabled>Selecione um Tipo de Registro</option>
                             <option value="RA">RA</option>
                             <option value="RM">RM</option>
                         </select>
 
-                        <input type="number" name="registro_txt" id="registro_txt" placeholder="Digite aqui seu";> <!--Colocar aq no JS qual é o registro selecionado-->
+                        <input type="number" name="registro_txt" id="registro_txt" placeholder="Digite aqui seu"> <!--Colocar aq no JS qual é o registro selecionado-->
                         <img src="../imagens/duvida.png" id="duvida"><br><br>
 
                         <label for="email" class="required">Email Institucional</label><br>
-                        <input type="text" name="email" id="email" placeholder="Email Institucional">
+                        <input type="text" name="email" id="email" placeholder="Email Institucional"  required>
                         <img src="../imagens/duvida.png" id="duvida"><br><br>
 
                         <label for="senha" class="required" id="senha_label">Senha</label>
                         <label for="conf_senha" class="required">Confirmar Senha</label><br>
 
-                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
-                        <input type="password" name="conf_senha" id="conf_senha" placeholder="Confirme sua senha"><br><br>
+                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha"  required>
+                        <input type="password" name="conf_senha" id="conf_senha" placeholder="Confirme sua senha" required><br><br>
                     </fieldset>
 
-                    <input type="submit" name="enviar" id="enviar" value="Enviar"> <input type="reset" name="limpar" id="limpar" value="Limpar">
+                    <input type="submit" name="enviar" id="enviar" value="Enviar"> 
+                    <input type="reset" name="limpar" id="limpar" value="Limpar">
                 </form>
             <!--Fim da Tela de Cadastro-->
         </main>
@@ -156,16 +157,17 @@
         </footer>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<!--VLibras para acessibilidade de deficientes auditivos-->
-<div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-    </div>
-  </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
+        <script src="../js/script.js"></script>
+        <!--VLibras para acessibilidade de deficientes auditivos-->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
     </body>
 </html>
