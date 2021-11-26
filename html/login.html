@@ -46,46 +46,31 @@
         </nav>
         </header>
 
-        <main id="tela-maior">
+        <main id="tela-menor">
             <!--Breadcrumb-->
             <ul class="breadcrumb">
                 <li><a href="index.html">Início</a></li>
-                <li>Cadastro</li>
+                <li>Login</li>
             </ul>
             <!--Fim do BreadCrumb-->
 
             <!--Tela de Cadastro-->
-                <h1>Faça seu Cadastro</h1>
+                <h1>Faça seu Login</h1>
 
-                <form name="cadastro" id="form" method="POST" onsubmit="return validarCadastro();">
+                <form name="cadastro" id="form" method="POST" <!--onsubmit="return validarCadastro();"--></form>
                     <fieldset>
                         <legend>Dados Pessoais</legend>
-
-                        <label for="nome" class="required">Nome</label><br>
-                        <input type="text" name="nome" id="nome" placeholder="Nome Completo" minlength="5" maxlength="255" required><br><br>
-
-                        <label for="registro" class="required" id="label-registro">Registro na Fatec</label>
-
-                        <label for="registro_txt" class="required">Registro</label><br>
-
-                        <select name="registro" id="registro" onchange="mudarRegistro();" required>
-                            <option value="" selected disabled>Selecione um Tipo de Registro</option>
-                            <option value="RA">RA</option>
-                            <option value="RM">RM</option>
-                        </select>
-
-                        <input type="text" name="registro_txt" id="registro_txt" placeholder="Digite aqui seu" maxlength="13"> <!--Colocar aq no JS qual é o registro selecionado-->
-                        <img src="../imagens/duvida.png" id="duvida"><br><br>
 
                         <label for="email" class="required">Email Institucional</label><br>
                         <input type="text" name="email" id="email" placeholder="Email Institucional" minlength="5" maxlength="255" required>
                         <img src="../imagens/duvida.png" id="duvida"><br><br>
 
                         <label for="senha" class="required" id="senha_label">Senha</label>
-                        <label for="conf_senha" class="required">Confirmar Senha</label><br>
+                        <label class="link">Esqueceu sua senha? <a href="#">Clique Aqui!</a></label><br>
 
                         <input type="password" name="senha" id="senha" placeholder="Digite sua senha" minlength="6" maxlength="8" required>
-                        <input type="password" name="conf_senha" id="conf_senha" placeholder="Confirme sua senha" minlength="6" maxlength="8"  required><br><br>
+                        
+                        <label class="link">Não tem uma conta? <a href="cadastro.html">Clique Aqui!</a></label><br><br>
                     </fieldset>
 
                     <input type="submit" name="enviar" id="enviar" value="Enviar"> 

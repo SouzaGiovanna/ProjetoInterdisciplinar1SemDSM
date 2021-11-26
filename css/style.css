@@ -150,7 +150,13 @@ main{
 }
 
 #tela-maior{
-    min-height: 700px;
+    min-height: 660px;
+    margin: 2% 2% 3.5% 0%;
+}
+
+#tela-menor{
+    min-height: 450px;
+    margin: 0% 5% 0% 5%;
 }
 
 /*Formulário*/
@@ -240,9 +246,17 @@ input[type=submit], input[type=reset]{
     margin-top: .5%;
 }
 
+input[type=submit]:hover, input[type=reset]:hover{
+    cursor: pointer;
+}
+
 .required:after{
     content: " *";
     color: red;
+}
+
+.link{
+    padding-left: 5%;
 }
 
 /* Paragrafo de Acessibilidade */
