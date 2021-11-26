@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sistema de Gerenciamento de Chamados</title>
+        <title>Syscall</title>
         <link rel="stylesheet" href="../css/style.css">
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script src="../js/aumentar.js"></script>
@@ -42,7 +42,7 @@
                 <li class="menu_item"><a href="javascript:void(0);">Meus Chamados</a></li>
                 <li class="menu_item"><a href="faq.html">FAQ</a></li>
                 <li class="menu_item"><a href="javascript:void(0);">Perfil</a></li>
-                <li class="menu_item"><a href="cadastro.html">Login</a></li>
+                <li class="menu_item"><a href="login.html">Login</a></li>
                 <li class="menu_item"><a href="javascript:void(0);">Logout</a></li>
             </ul>
         </nav>
@@ -59,31 +59,39 @@
             <!--Tela de Cadastro-->
                 <h1>Faça seu Cadastro</h1>
 
-                <form name="cadastro" id="form" method="POST">
+                <form name="cadastro" id="form" method="POST" onsubmit="return validarCadastro();">
                     <fieldset>
                         <legend>Dados Pessoais</legend>
 
                         <label for="nome" class="required">Nome</label><br>
-                        <input type="text" name="nome" id="nome" placeholder="Nome Completo"><br><br>
+                        <input type="text" name="nome" id="nome" placeholder="Nome Completo" minlength="5" maxlength="255" required><br><br>
 
-                        <label for="registro" class="required">Registro na Fatec</label>
+                        <label for="registro" class="required" id="label-registro">Registro na Fatec</label>
 
                         <label for="registro_txt" class="required">Registro</label><br>
 
-                        <select name="registro" id="registro">
+                        <select name="registro" id="registro" onchange="mudarRegistro();" required>
                             <option value="" selected disabled>Selecione um Tipo de Registro</option>
                             <option value="RA">RA</option>
                             <option value="RM">RM</option>
                         </select><br><br>
 
-                        <input type="text" name="registro_txt" id="registro_txt" placeholder="Digite aqui seu";> <!--Colocar aq no JS qual é o registro selecionado-->
-
-                        <label for="email" class="required">E-mail Institucional</label><br>
-                        <input type="email" name="email" id="email" placeholder="Email Institucional">
+                        <input type="text" name="registro_txt" id="registro_txt" placeholder="Digite aqui seu" maxlength="13"> <!--Colocar aq no JS qual é o registro selecionado-->
                         <img src="../imagens/duvida.png" id="duvida"><br><br>
-                        
-                        <input type="submit" name="enviar" id="enviar" value="Enviar"> <input type="reset" name="limpar" id="limpar" value="Limpar">
+
+                        <label for="email" class="required">Email Institucional</label><br>
+                        <input type="text" name="email" id="email" placeholder="Email Institucional" minlength="5" maxlength="255" required>
+                        <img src="../imagens/duvida.png" id="duvida"><br><br>
+
+                        <label for="senha" class="required" id="senha_label">Senha</label>
+                        <label for="conf_senha" class="required">Confirmar Senha</label><br>
+
+                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" minlength="6" maxlength="8" required>
+                        <input type="password" name="conf_senha" id="conf_senha" placeholder="Confirme sua senha" minlength="6" maxlength="8"  required><br><br>
                     </fieldset>
+
+                    <input type="submit" name="enviar" id="enviar" value="Enviar"> 
+                    <input type="reset" name="limpar" id="limpar" value="Limpar">
                 </form>
             <!--Fim da Tela de Cadastro-->
         </main>
@@ -149,18 +157,21 @@
                 </ul>
             </div>
         </footer>
+
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<!--VLibras para acessibilidade de deficientes auditivos-->
-<div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-    </div>
-  </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <script src="../js/script.js"></script>
+        <!--VLibras para acessibilidade de deficientes auditivos-->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
     </body>
 </html>

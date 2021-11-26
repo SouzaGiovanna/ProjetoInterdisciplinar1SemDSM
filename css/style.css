@@ -10,7 +10,7 @@
     height: auto;
     background-color: #ca1313;
     margin: auto;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 #atalhos{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -28,7 +28,7 @@
     color: #3e3e3e;
 }
 #pgaccess{
-    padding-left: 40%;
+    padding-left: 20%;
 }
 ul #contrastep, ul #scontraste, ul #fonteA, ul #fontea{
     padding-left: 8px;
@@ -149,9 +149,15 @@ main{
     min-height: 574px;
 }
 
-/*#tela-maior{
-    min-height: 470px;
-}*/
+#tela-maior{
+    min-height: 660px;
+    margin: 2% 2% 3.5% 0%;
+}
+
+#tela-menor{
+    min-height: 450px;
+    margin: 0% 5% 0% 5%;
+}
 
 /*Formulário*/
 #form, #abrirChamado, #pesquisar_id_ou_equipamento{
@@ -160,7 +166,7 @@ main{
     position: relative;
 }
 
-input{
+input, select{
     width: 99%;
     height: 40px;
     background-color: #f3f3f3b0;
@@ -187,6 +193,29 @@ input{
     width: 97%;
     text-align: left;
     font-size: 1.2em;
+}
+
+#label-registro{
+    margin-right: 5%;
+}
+
+#senha_label{
+    margin-right: 40%;
+}
+
+select{
+    width: auto;
+    height: 50px;
+    margin-right: 2%;
+}
+
+#registro_txt{
+    width: 70%;
+}
+
+#senha, #conf_senha{
+    width: 45.2%;
+    margin-top: 1.5%;
 }
 
 #email{
@@ -346,9 +375,17 @@ input[type=submit], input[type=reset]{
     margin-top: .5%;
 }
 
+input[type=submit]:hover, input[type=reset]:hover{
+    cursor: pointer;
+}
+
 .required:after{
     content: " *";
     color: red;
+}
+
+.link{
+    padding-left: 5%;
 }
 
 /* Paragrafo de Acessibilidade */
