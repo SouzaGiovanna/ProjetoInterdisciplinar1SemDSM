@@ -273,6 +273,19 @@ tr{
     width: 33%;
 }
 
+th{
+    width: 12.5%;
+    height: 40px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.tdchamados{
+    width: 12.5%;
+    height: 40px;
+    text-align: center;
+}
+
 /* Formatando Botão */
 #agaprovacao,
 #aberto,
