@@ -30,10 +30,6 @@
         </div>
 
         <nav id="nav">
-            <!--Menu Hamburguer-->
-            <label for="bt_menu"><img src="../imagens/menu.png" alt="menu"></label>
-            <input type="checkbox" id="bt_menu">
-            <!--Fim Menu Hamburguer-->
             <ul id="menu">
                 <li class="menu_item"><a href="index.html">Início</a></li>
                 <li class="menu_item"><a href="abrir_chamado.html">Abrir Chamado</a></li>
@@ -55,14 +51,14 @@
             <!--Breadcrumb-->
             <ul class="breadcrumb">
                 <li><a href="index.html">Início</a></li>
-                <li>Cadastro</li>
+                <li>Login</li>
             </ul>
             <!--Fim do BreadCrumb-->
 
             <!--Tela de Cadastro-->
-                <h1>Faça seu Cadastro</h1>
+                <h1>Atualize seus dados</h1>
 
-                <form name="cadastro" id="form" method="POST" onsubmit="return validarCadastro();">
+                <form name="login" id="form" method="POST" onsubmit="return validarCadastro();">
                     <fieldset>
                         <legend>Dados Pessoais</legend>
 
@@ -84,13 +80,11 @@
 
                         <label for="email" class="required">Email Institucional</label><br>
                         <input type="text" name="email" id="email" placeholder="Email Institucional" minlength="5" maxlength="255" required>
-                        <a href="faq.html"><img src="../imagens/duvida.png" id="duvida"></a><br><br>
+                        <a href="faq.html"><a href="faq.html"><img src="../imagens/duvida.png" id="duvida"></a></a><br><br>
 
-                        <label for="senha" class="required" id="senha_label">Senha</label>
-                        <label for="conf_senha" class="required">Confirmar Senha</label><br>
+                        <label for="senha" class="required" id="senha_label">Senha</label><br>
 
-                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" minlength="6" maxlength="8" required>
-                        <input type="password" name="conf_senha" id="conf_senha" placeholder="Confirme sua senha" minlength="6" maxlength="8"  required><br><br>
+                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" minlength="6" maxlength="8" required><br><br>
                     </fieldset>
 
                     <input type="submit" name="enviar" id="enviar" value="Enviar"> 

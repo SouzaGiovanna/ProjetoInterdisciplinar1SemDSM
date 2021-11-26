@@ -6,60 +6,78 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Syscall</title>
         <link rel="stylesheet" href="../css/style.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-        <script src="../js/aumentar.js"></script>
     </head>
     <body>
         <header>
-            <div id="acessibilidade">
-                <ul id="atalhos">
-                    <li><a href="#conteudo" accesskey="1" title="Ir diretamente para o conteúdo">Ir para o Conteúdo [1]</a></li>
-                    <li><a href="#menu" accesskey="2" title="Ir diretamente para o menu">Ir para o Menu [2]</a></li>
-                    <li><a href="#rodape" accesskey="3" title="Ir diretamente para o rodapé"> Ir para o Rodapé [3]</a></li>
-    
-                    <li id="pgaccess"><a href="./acessibilidade.html" title="Ir para a página de Acessibilidade">ACESSIBILIDADE</a></li>
-                    <li id="contrastep"><a href="javascript:void(0);" id="contraste">CONTRASTE PRETO</a></li>
-                    <li id="scontraste"><a href="javascript:void(0);" id="sem_contraste">SEM CONTRASTE</a></li>
-                    <li id="fonteA"><a href="javascript:void(0);" id="aumentar">A+</a></li>
-                    <li id="fontea"><a href="javascript:void(0);" id="diminuir">A-</a></li>
-                </ul>
-            </div>
-            <div id="logos">
-                <img src="../imagens/logo_fatec_branco.png" id="logo_fatec">
-                <img src="../imagens/2020_logo_cps_gov_sec_versao_horizontal.png" id="logo_cps">
-            </div>
+        <div id="acessibilidade">
+            <ul id="atalhos">
+                <li><a href="#conteudo" accesskey="1" title="Ir diretamente para o conteúdo">Ir para o Conteúdo [1]</a></li>
+                <li><a href="#menu" accesskey="2" title="Ir diretamente para o menu">Ir para o Menu [2]</a></li>
+                <li><a href="#rodape" accesskey="3" title="Ir diretamente para o rodapé"> Ir para o Rodapé [3]</a></li>
 
+                <li id="pgaccess"><a href="./acessibilidade.html" title="Ir para a página de Acessibilidade">ACESSIBILIDADE</a></li>
+                <li id="contrastep"><a href="javascript:void(0);" id="contraste">CONTRASTE PRETO</a></li>
+                <li id="scontraste"><a href="javascript:void(0);" id="sem_contraste">SEM CONTRASTE</a></li>
+                <li id="fonteA"><a href="javascript:void(0);" id="aumentar">A+</a></li>
+                <li id="fontea"><a href="javascript:void(0);" id="diminuir">A-</a></li>
+            </ul>
+        </div>
+        <div id="logos">
+            <img src="../imagens/logo_fatec_branco.png" id="logo_fatec">
+            <img src="../imagens/2020_logo_cps_gov_sec_versao_horizontal.png" id="logo_cps">
+        </div>
 
-            <nav id="nav">
-                <!--Menu Hamburguer-->
-                <label for="bt_menu"><img src="../imagens/menu.png" alt="menu"></label>
-                <input type="checkbox" id="bt_menu">
-                <!--Fim Menu Hamburguer-->
-                <ul id="menu">
-                    <li class="menu_item"><a href="javascript:void(0);">Início</a></li>
-                    <li class="menu_item"><a href="abrir_chamado.html">Abrir Chamado</a></li>
-                    <li class="menu_item"><a href="javascript:void(0);">Acompanhar Chamados</a>
-                        <ul id="submenu">
-                            <li class="menu_item_submenu"><a href="./acompanhamento_equipamento.html">Pesquisar Pelo Equipamento</a></li>
-                            <li class="menu_item_submenu"><a href="./acompanhamento_todos.html">Visualizar Todos</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu_item"><a href="faq.html">FAQ</a></li>
-                    <li class="menu_item"><a href="perfil.html">Perfil</a></li>
-                    <li class="menu_item"><a href="login.html">Login</a></li>
-                    <li class="menu_item"><a href="javascript:void(0);">Logout</a></li>
-                </ul>
-            </nav>
+        <nav id="nav">
+            <ul id="menu">
+                <li class="menu_item"><a href="index.html">Início</a></li>
+                <li class="menu_item"><a href="abrir_chamado.html">Abrir Chamado</a></li>
+                <li class="menu_item"><a href="javascript:void(0);">Acompanhar Chamados</a>
+                    <ul id="submenu">
+                        <li class="menu_item_submenu"><a href="./acompanhamento_equipamento.html">Pesquisar Pelo Equipamento</a></li>
+                        <li class="menu_item_submenu"><a href="./acompanhamento_todos.html">Visualizar Todos</a></li>
+                    </ul>
+                </li>
+                <li class="menu_item"><a href="faq.html">FAQ</a></li>
+                <li class="menu_item"><a href="perfil.html">Perfil</a></li>
+                <li class="menu_item"><a href="login.html">Login</a></li>
+                <li class="menu_item"><a href="javascript:void(0);">Logout</a></li>
+            </ul>
+        </nav>
         </header>
-        <main id="conteudo_index">
-            <section>
-            <h1 id="h1_inicio">Seja Bem Vindo!</h1>
 
-            <p class="parag_inicio">Problemas com o Equipamento de Informática?</p>
-            <p class="parag_inicio">SysCall, o Sistema de chamados de TI da Fatec - Zona Leste pode te ajudar.</p>
+        <main id="tela-menor">
+            <!--Breadcrumb-->
+            <ul class="breadcrumb">
+                <li><a href="index.html">Início</a></li>
+                <li>Login</li>
+            </ul>
+            <!--Fim do BreadCrumb-->
 
-        </section>                
+            <!--Tela de Cadastro-->
+                <h1>Faça seu Login</h1>
+
+                <form name="cadastro" id="form" method="POST" <!--onsubmit="return validarCadastro();"--></form>
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+
+                        <label for="email" class="required">Email Institucional</label><br>
+                        <input type="text" name="email" id="email" placeholder="Email Institucional" minlength="5" maxlength="255" required>
+                        <a href="faq.html"><img src="../imagens/duvida.png" id="duvida"></a><br><br>
+
+                        <label for="senha" class="required" id="senha_label">Senha</label>
+                        <label class="link">Esqueceu sua senha? <a href="#">Clique Aqui!</a></label><br>
+
+                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" minlength="6" maxlength="8" required>
+                        
+                        <label class="link">Não tem uma conta? <a href="cadastro.html">Clique Aqui!</a></label><br><br>
+                    </fieldset>
+
+                    <input type="submit" name="enviar" id="enviar" value="Enviar"> 
+                    <input type="reset" name="limpar" id="limpar" value="Limpar">
+                </form>
+            <!--Fim da Tela de Cadastro-->
         </main>
+      
         <footer id="rodape">
             <div>
                 <p class="title_rodape">Como nos encontrar?</p></li>
@@ -121,18 +139,21 @@
                 </ul>
             </div>
         </footer>
+
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<!--VLibras para acessibilidade de deficientes auditivos-->
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <script src="../js/script.js"></script>
+        <!--VLibras para acessibilidade de deficientes auditivos-->
         <div vw class="enabled">
             <div vw-access-button class="active"></div>
             <div vw-plugin-wrapper>
-              <div class="vw-plugin-top-wrapper"></div>
+            <div class="vw-plugin-top-wrapper"></div>
             </div>
-          </div>
-          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-          <script>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
             new window.VLibras.Widget('https://vlibras.gov.br/app');
-          </script>
+        </script>
     </body>
 </html>

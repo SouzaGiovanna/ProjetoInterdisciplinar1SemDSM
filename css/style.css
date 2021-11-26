@@ -10,7 +10,7 @@
     height: auto;
     background-color: #ca1313;
     margin: auto;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 #atalhos{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -28,7 +28,7 @@
     color: #3e3e3e;
 }
 #pgaccess{
-    padding-left: 40%;
+    padding-left: 20%;
 }
 ul #contrastep, ul #scontraste, ul #fonteA, ul #fontea{
     padding-left: 8px;
@@ -160,9 +160,15 @@ main{
     min-height: 574px;
 }
 
-/*#tela-maior{
-    min-height: 470px;
-}*/
+#tela-maior{
+    min-height: 660px;
+    margin: 2% 2% 3.5% 0%;
+}
+
+#tela-menor{
+    min-height: 450px;
+    margin: 0% 5% 0% 5%;
+}
 
 #conteudo_index{
     background-image: url("../imagens/fundo\ teste\ 2.jpg");
@@ -180,7 +186,7 @@ main{
     position: relative;
 }
 
-input{
+input, select{
     width: 99%;
     height: 40px;
     background-color: #f3f3f3b0;
@@ -209,6 +215,29 @@ input{
     font-size: 1.2em;
 }
 
+#label-registro{
+    margin-right: 7%;
+}
+
+#senha_label{
+    margin-right: 40%;
+}
+
+#registro{
+    width: auto;
+    height: 50px;
+    margin-right: 2%;
+}
+
+#registro_txt{
+    width: 63%;
+}
+
+#senha, #conf_senha{
+    width: 45.2%;
+    margin-top: 1.5%;
+}
+
 #email{
     width: 92%;
 }
@@ -225,6 +254,7 @@ label, legend{
     font-weight: bold;
     font-size: 1.1em;
 }
+
 fieldset{
     border-color: #A31212;
     border-radius: 15px;
@@ -264,6 +294,7 @@ input[type=submit], input[type=reset]{
     content: " *";
     color: red;
 }
+
 select{
     width: 30%;
     height: 55px;
@@ -380,9 +411,17 @@ input[type=submit], input[type=reset]{
     margin-top: .5%;
 }
 
+input[type=submit]:hover, input[type=reset]:hover{
+    cursor: pointer;
+}
+
 .required:after{
     content: " *";
     color: red;
+}
+
+.link{
+    padding-left: 5%;
 }
 
 /* Paragrafo de Acessibilidade */
