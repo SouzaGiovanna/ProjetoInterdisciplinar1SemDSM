@@ -38,6 +38,17 @@ ul #contrastep, ul #scontraste, ul #fonteA, ul #fontea{
 h1{
     text-align: center;
 }
+#h1_inicio{
+    color: #ca1313;
+}
+.parag_inicio{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7em;
+    padding-top: 5%;
+    text-align: center;
+    color: #ca1313;
+    font-weight: bold;
+}
 
 /*Menu*/
 header{
@@ -89,7 +100,7 @@ header{
     text-decoration: none;
     display: block;
     color: #fff;
-    font-size: 18px;
+    font-size: 1.3em;
 }
 
 #submenu{
@@ -152,6 +163,15 @@ main{
 /*#tela-maior{
     min-height: 470px;
 }*/
+
+#conteudo_index{
+    background-image: url("../imagens/fundo\ teste\ 2.jpg");
+    background-repeat: no-repeat;
+    padding: 25px;
+    background-position: center;
+    background-size: 100% 100%;
+  
+}
 
 /*Formulário*/
 #form, #abrirChamado, #pesquisar_id_ou_equipamento{
@@ -300,28 +320,29 @@ th{
     font-size: 1em;
     text-align: center;
     font-weight: bold;
+    color: #fff;
 }
 
 #agaprovacao{
-    background-color: orange;
+    background-color: #ff6b00;
 }
 #aberto{
-    background-color: blue;
+    background-color: #0085ff;
 }
 #agresposta{
-    background-color: coral;
+    background-color: #edb054;
 }
 #concluido{
-    background-color: green;
+    background-color: #42e385;
 }
 #rejeitado{
-    background-color: magenta;
+    background-color: #2d4f4f;
 }
 #cancelado{
-    background-color: red;
+    background-color: #A31212;
 }
 #agendado{
-    background-color: grey;
+    background-color: #9f9f9f;
 }
 
 fieldset{
@@ -419,6 +440,15 @@ input[type=submit], input[type=reset]{
     display: block;
     list-style: none;
 }
+
+/* Menu Hamburguer */
+label[for="bt_menu"]{
+    display: none;
+}
+#bt_menu{
+    display: none;
+}
+/* Fim do Menu hamburguer */
 
 /*rodapé*/
 #rodape{
@@ -520,6 +550,96 @@ input[type=submit], input[type=reset]{
 }
 
 /*Media Queries*/
+
+/* MQ Menu Responsivo - Hamburguer */
+@media screen and (max-width: 630px) {
+    #menu{
+        display: none;
+    }
+
+    label[for="bt_menu"]{
+        display: block;
+        
+
+    }
+    #bt_menu:checked ~ #menu{
+        display: inline-table;
+        border: none;
+    }
+
+    .menu_item{
+        position: relative  ;
+        float: left;
+        width: 100%;
+        border: none;
+    }
+    .menu_item a{
+        font-size: 0.9em;
+    }
+ 
+    #submenu{
+        position: static;
+        width: 100%;
+        float: right;
+        border: none;
+    }
+        
+    .menu_item_submenu{
+        position:relative;
+        padding-left: 20%;
+        width: 80%;
+        float: left;
+        display: block;
+        border: none;
+    }
+}
+/* FIM - MQ Menu Responsivo - Hamburguer */
+
+/* MQ - Barra de Acessibilidade */
+@media screen and (max-width: 1440px) {
+
+    #pgaccess{
+        padding-left: 30%;
+    }
+
+    ul #contrastep, ul #scontraste, ul #fonteA, ul #fontea{
+        padding-left: 5px;
+    }
+    
+}
+
+@media screen and (max-width: 1280px) {
+    #pgaccess{
+        padding-left: 20%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #pgaccess{
+        padding-left: 15%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+
+    #atalhos li{
+        display: none;
+    }
+
+    ul #pgaccess, ul #contrastep, ul #scontraste, ul #fonteA, ul #fontea{
+        padding-left: 2%;
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    ul #pgaccess, ul #contrastep, ul #scontraste, ul #fonteA, ul #fontea{
+        padding-left: 2%;
+        display: inline;
+        font-size: 0.7em;
+    }
+}
+/* FIM - MQ - Barra de Acessibilidade */
 
 /*Rodapé*/
 @media screen and (max-width:665px){
