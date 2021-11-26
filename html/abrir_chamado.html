@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Syscall</title>
         <link rel="stylesheet" href="../css/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="../js/aumentar.js"></script>
     </head>
     <body>
         <header>
@@ -53,6 +55,56 @@
                 <li>abrir_chamado</li>
             </ul>
             <!--Fim do BreadCrumb-->
+            <h1>Abrir Chamados</h1>
+
+            <form name="abrirChamado" id="abrirChamado" action="onsubmit" method="post">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                        <label for="nome" class="required">Nome</label><br>
+                        <input type="text" name="nome" id="nome" placeholder="Nome Completo"><br><br>
+
+                        <label for="email2" class="required">E-mail Institucional</label><br><br>
+                        <input type="text" name="email" id="email2" placeholder="Email Institucional">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sobre seu problema</legend>
+                    <table>
+                        <td class="td1">
+                            <label for="localAmbiente2" class="required">Local</label><br>
+                            <select name="localAmbiente" id="localAmbiente2">
+                                <option value="" selected disabled>Selecione um Local</option>
+                                <option value="laboratorio">LABORATÓRIO</option>
+                                <option value="secretatia">SECRETARIA</option>
+                                <option value="biblioteca">BIBLIOTECA</option>
+                                <option value="coordenacao">COORDENAÇÃO</option>
+                            </select><br><br>
+                        </td>
+                        <td class="td2">
+                            <label for="tipoEquipamento2" class="required">Tipo de Equipamento</label><br>
+                            <select name="tipoEquipamento" id="tipoEquipamento2">
+                                <option value="" selected disabled>Selecione tipo de Equipamento</option>
+                                <option value="computador">COMPUTADOR</option>
+                                <option value="mouse">MOUSE</option>
+                                <option value="impressora">IMPRESSORA</option>
+                                <option value="projetor">PROJETOR MULTIMIDIA</option>
+                                <option value="software">SOFTWARE</option>
+                            </select><br><br>
+                        </td>
+                        <td class="td3">
+                            <label for="nomeEquipamento2" class="required">Nome do Equipamento</label><br>
+                            <input type="text" name="nome" id="nomeEquipamento2" placeholder="Nome do Equipamento"><br><br>
+                        </td>
+                    </table>                        
+                        <label for="descricaoSolicitacao" class="required">Descrição da Solicitação</label><br>
+                        <textarea name="descricaoSolicitacao" id="descricaoSolicitacao" cols="50" rows="20" placeholder="Descreva aqui sua solicitação com os detalhes desejados."></textarea>
+                </fieldset>
+                <input type="submit" name="enviar" id="enviar" value="Enviar"> <input type="reset" name="limpar" id="limpar" value="Limpar">
+
+
+            </form>
+
+ 
         </main>
 
         <footer id="rodape">

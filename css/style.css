@@ -160,10 +160,10 @@ main{
 }
 
 /*Formulário*/
-#form{
+#form, #abrirChamado, #pesquisar_id_ou_equipamento{
     margin: 2%;
     width: 96%;
-    position: absolute;
+    position: relative;
 }
 
 input, select{
@@ -173,6 +173,26 @@ input, select{
     color: #000;
     border-radius: 10px;
     padding: 5px;
+}
+#idChamado,
+#statusChamado,
+#localAmbiente,
+#dtAbertura,
+#dtAtualizacao,
+#dtPrevisao,
+#tipoEquipamento,
+#nomeEquipamento{
+    width: 97%;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#localAmbiente2,
+#tipoEquipamento2,
+#nomeEquipamento2{
+    width: 97%;
+    text-align: left;
+    font-size: 1.2em;
 }
 
 #label-registro{
@@ -202,6 +222,10 @@ select{
     width: 92%;
 }
 
+#email2{
+    width: 99%;
+}
+
 #nome{
     margin-top: 1%;
 }
@@ -209,6 +233,111 @@ select{
 label, legend{
     font-weight: bold;
     font-size: 1.1em;
+}
+fieldset{
+    border-color: #A31212;
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+
+input[type=submit]{
+    width: 15%;
+    height: 40px;
+    background-color: #fff;
+    color: #000;
+    margin-left: 30%;
+}
+
+input[type=reset]{
+    width: 15%;
+    height: 40px;
+    background-color: #fff;
+    color: #000;
+    float: right;
+    margin-right: 30%;
+}
+
+input[type=submit], input[type=reset]{
+    width: 170px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 35px;
+    border: #A31212 solid 2px;
+    margin-bottom: 1%;
+    margin-top: .5%;
+}
+
+.required:after{
+    content: " *";
+    color: red;
+}
+select{
+    width: 30%;
+    height: 55px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+textarea{
+    width: 99%;
+    height: auto;
+    background-color: #f3f3f3b0;
+    color: #000;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1.2em;
+}
+/* Formatação das tabelas */
+table{
+    width: 100%;
+}
+
+tr{
+    width: 100%;
+}
+
+.td1, .td2, .td3{
+    width: 33%;
+}
+
+/* Formatando Botão */
+#agaprovacao,
+#aberto,
+#agresposta,
+#concluido,
+#rejeitado,
+#cancelado,
+#agendado{
+    width: 14%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#agaprovacao{
+    background-color: orange;
+}
+#aberto{
+    background-color: blue;
+}
+#agresposta{
+    background-color: coral;
+}
+#concluido{
+    background-color: green;
+}
+#rejeitado{
+    background-color: magenta;
+}
+#cancelado{
+    background-color: red;
+}
+#agendado{
+    background-color: grey;
 }
 
 fieldset{
