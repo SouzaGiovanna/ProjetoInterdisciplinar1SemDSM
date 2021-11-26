@@ -30,6 +30,10 @@
             </div>
     
             <nav id="nav">
+                <!--Menu Hamburguer-->
+                <label for="bt_menu"><img src="../imagens/menu.png" alt="menu"></label>
+                <input type="checkbox" id="bt_menu">
+                <!--Fim Menu Hamburguer-->
                 <ul id="menu">
                     <li class="menu_item"><a href="index.html">Início</a></li>
                     <li class="menu_item"><a href="abrir_chamado.html">Abrir Chamado</a></li>
@@ -56,7 +60,7 @@
         </ul>
         <!--Fim do BreadCrumb-->
 
-        <h1>Acompanhamento de Chamado por ID</h1>
+        <h1>Acompanhamento de Chamados</h1>
 
             <form name="pesquisar_id_ou_equipamento" id="pesquisar_id_ou_equipamento" action="onsubit" method="post">
                 <fieldset>
@@ -73,6 +77,52 @@
                     <input type="button" id="cancelado" value="Cancelado">
                 </fieldset>
                 <input type="submit" name="pesquisar" id="pesquisar" value="Pesquisar"> <input type="reset" name="limpar" id="limpar" value="Limpar">
+
+                <fieldset>
+                    <legend>Resultados da Pesquisa</legend>
+                    <table>
+                        <tr>
+                            <th>Código</th>
+                            <th>Local</th>
+                            <th>Data Abertura</th>
+                            <th>Data Atualização</th>
+                            <th>Equipamento</th>
+                            <th>Status</th>
+                            <th>Editar</th>
+                            <th>Visualizar</th>
+                        </tr>                        
+                        <tr>
+                            <td class="tdchamados">001</td>
+                            <td class="tdchamados">LABORATÓRIO-001</td>
+                            <td class="tdchamados">20/11/2021</td>
+                            <td class="tdchamados">22/11/2021</td>
+                            <td class="tdchamados">COMPUTADOR</td>
+                            <td class="tdchamados"><input type="button" id="agendado" value=""></td>
+                            <td class="tdchamados"><a href="javascript:void(0);"> <img src="../imagens/outline_edit_black_24dp.png" alt="ícone de edtar o chamado"></a></td>
+                            <td class="tdchamados"><a href="javascript:void(0);"><img src="../imagens/outline_visibility_black_24dp.png" alt="ícone de visualização do chamado"></a></td>
+                        </tr>
+                        <tr>
+                            <td class="tdchamados">020</td>
+                            <td class="tdchamados">LABORATÓRIO-002</td>
+                            <td class="tdchamados">23/11/2021</td>
+                            <td class="tdchamados">23/11/2021</td>
+                            <td class="tdchamados">COMPUTADOR</td>
+                            <td class="tdchamados"><input type="button" id="agaprovacao" value=""></td>
+                            <td class="tdchamados"><a href="javascript:void(0);"> <img src="../imagens/outline_edit_black_24dp.png" alt="ícone de edtar o chamado"></a> </td>
+                            <td class="tdchamados"><a href="javascript:void(0);"><img src="../imagens/outline_visibility_black_24dp.png" alt="ícone de visualização do chamado"></a></td>
+                        </tr>
+                        <tr>
+                            <td class="tdchamados">012</td>
+                            <td class="tdchamados">SECRETARIA</td>
+                            <td class="tdchamados">25/11/2021</td>
+                            <td class="tdchamados">26/11/2021</td>
+                            <td class="tdchamados">MOUSE</td>
+                            <td class="tdchamados"><input type="button" id="cancelado" value=""></td>
+                            <td class="tdchamados"><a href="javascript:void(0);"> <img src="../imagens/outline_edit_black_24dp.png" alt="ícone de edtar o chamado"></a> </td>
+                            <td class="tdchamados"><a href="javascript:void(0);"><img src="../imagens/outline_visibility_black_24dp.png" alt="ícone de visualização do chamado"></a></td>
+                        </tr>
+                    </table>
+                </fieldset>
             </form>
         </main>
 
