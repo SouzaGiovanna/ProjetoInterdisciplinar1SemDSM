@@ -73,8 +73,14 @@
                 <fieldset>
                     <legend>Sobre seu problema</legend>
                     <table>
+                        <tr>
+                            <td><label for="localAmbiente2" class="required">Local</label></td>
+                            <td><label for="tipoEquipamento2" class="required">Tipo de Equipamento</label></td>
+                            <td><label for="nomeEquipamento2" class="required">Nome do Equipamento</label></td>
+                        </tr>
+                        <tr>
                         <td class="td1">
-                            <label for="localAmbiente2" class="required">Local</label><br>
+                            
                             <select name="localAmbiente" id="localAmbiente2">
                                 <option value="" selected disabled>Selecione um Local</option>
                                 <option value="laboratorio">LABORATÓRIO</option>
@@ -84,7 +90,7 @@
                             </select><br><br>
                         </td>
                         <td class="td2">
-                            <label for="tipoEquipamento2" class="required">Tipo de Equipamento</label><br>
+                            
                             <select name="tipoEquipamento" id="tipoEquipamento2">
                                 <option value="" selected disabled>Selecione tipo de Equipamento</option>
                                 <option value="computador">COMPUTADOR</option>
@@ -95,9 +101,10 @@
                             </select><br><br>
                         </td>
                         <td class="td3">
-                            <label for="nomeEquipamento2" class="required">Nome do Equipamento</label><br>
+                            
                             <input type="text" name="nome" id="nomeEquipamento2" placeholder="Nome do Equipamento"><br><br>
                         </td>
+                    </tr>
                     </table>                        
                         <label for="descricaoSolicitacao" class="required">Descrição da Solicitação</label><br>
                         <textarea name="descricaoSolicitacao" id="descricaoSolicitacao" cols="50" rows="20" placeholder="Descreva aqui sua solicitação com os detalhes desejados."></textarea>
@@ -180,10 +187,10 @@
             <div vw-plugin-wrapper>
               <div class="vw-plugin-top-wrapper"></div>
             </div>
-          </div>
-          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-          <script>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
             new window.VLibras.Widget('https://vlibras.gov.br/app');
-          </script>
+        </script>
     </body>
 </html>

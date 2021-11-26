@@ -28,7 +28,7 @@
     color: #3e3e3e;
 }
 #pgaccess{
-    padding-left: 20%;
+    padding-left: 42%;
 }
 ul #contrastep, ul #scontraste, ul #fonteA, ul #fontea{
     padding-left: 8px;
@@ -638,27 +638,34 @@ label[for="bt_menu"]{
 @media screen and (max-width: 1440px) {
 
     #pgaccess{
-        padding-left: 30%;
+        padding-left: 25%;
     }
-
     ul #contrastep, ul #scontraste, ul #fonteA, ul #fontea{
         padding-left: 5px;
-    }
-    
+    }   
 }
-
 @media screen and (max-width: 1280px) {
     #pgaccess{
         padding-left: 20%;
     }
-}
-
-@media screen and (max-width: 1024px) {
-    #pgaccess{
-        padding-left: 15%;
+    ul li{
+        font-size: 00.88em;
+    }
+    ul #pgaccess, #contrastep, ul #scontraste, ul #fonteA, ul #fontea{
+        font-size: 0.88em;
     }
 }
-
+@media screen and (max-width: 1024px) {
+    #pgaccess{
+        padding-left: 10%;
+    }
+    ul li{
+        font-size: 0.8em;
+    }
+    ul #pgaccess, #contrastep, ul #scontraste, ul #fonteA, ul #fontea{
+        font-size: 0.8em;
+    }
+}
 @media screen and (max-width: 630px) {
 
     #atalhos li{
@@ -668,17 +675,249 @@ label[for="bt_menu"]{
     ul #pgaccess, ul #contrastep, ul #scontraste, ul #fonteA, ul #fontea{
         padding-left: 2%;
         display: inline;
+        font-size: 1em;
     }
 }
-
 @media screen and (max-width: 440px) {
     ul #pgaccess, ul #contrastep, ul #scontraste, ul #fonteA, ul #fontea{
         padding-left: 2%;
         display: inline;
-        font-size: 0.7em;
+        font-size: 0.72em;
     }
 }
+@media screen and (max-width: 414px) {
+    ul #pgaccess, ul #contrastep, ul #scontraste, ul #fonteA, ul #fontea{
+    padding-left: 2%;
+    display: inline;
+    font-size: 0.67em;
+    }
+}
+@media screen and (max-width: 375px) {
+    ul #pgaccess, ul #contrastep, ul #scontraste, ul #fonteA, ul #fontea{
+    padding-left: 2%;
+    display: inline;
+    font-size: 0.6em;
+    }
+    #logo_cps{
+        display: none;
+    }
+}
+@media screen and (max-width: 360px) {
+    ul #pgaccess, ul #contrastep, ul #scontraste, ul #fonteA, ul #fontea{
+    padding-left: 1%;
+    display: inline;
+    font-size: 0.58em;
+   }
+}
 /* FIM - MQ - Barra de Acessibilidade */
+
+/* MQ - Formulários */
+@media screen and (max-width: 1024px) {
+    #abrirChamado,
+    #pesquisar_id_ou_equipamento,
+    #form{
+        font-size: 1.1em;
+    }
+    input{
+        height: 30px;
+    }
+    select{
+        height: 45px;
+    }
+    input[type=submit]{
+        margin-left: 18%;
+    }    
+    input[type=reset]{
+        margin-right: 18%;
+    }
+    input[type=submit], input[type=reset]{
+        width: 135px;
+        height: 45px;
+    }
+    #idChamado,
+    #statusChamado,
+    #localAmbiente,
+    #dtAbertura,
+    #dtAtualizacao,
+    #dtPrevisao,
+    #tipoEquipamento,
+    #nomeEquipamento{
+        width: 93%;
+        font-size: 1.1em;
+    }
+    #localAmbiente2,
+    #tipoEquipamento2,
+    #nomeEquipamento2{
+        width: 93%;
+        font-size: 1.1em;
+    }
+    /* Formatando Botão */
+    #agaprovacao,
+    #aberto,
+    #agresposta,
+    #concluido,
+    #rejeitado,
+    #cancelado,
+    #agendado{
+        width: 12.5%;
+        height: 35px;
+        font-size: 0.6em;
+    }
+}
+@media screen and(max-widt: 630px) {
+    #abrirChamado,
+    #pesquisar_id_ou_equipamento,
+    #form{
+        font-size: 1em;
+    }
+    
+}
+@media screen and (max-width: 540px) {
+    #abrirChamado,
+    #pesquisar_id_ou_equipamento,
+    #form,
+    #conteudo{
+        font-size: 0.9em;
+    }
+    input{
+        height: 30px;
+    }
+    select{
+        height: 45px;
+    }
+    input[type=submit]{
+        margin-left: 18%;
+    }    
+    input[type=reset]{
+        margin-right: 18%;
+    }
+    input[type=submit], input[type=reset]{
+        width: 120px;
+        height: 45px;
+    }
+    #vlibras{
+        display: none;
+    }
+    #idChamado,
+    #statusChamado,
+    #localAmbiente,
+    #dtAbertura,
+    #dtAtualizacao,
+    #dtPrevisao,
+    #tipoEquipamento,
+    #nomeEquipamento{
+        width: 90%;
+        font-size: 1em;
+    }
+    #localAmbiente2,
+    #tipoEquipamento2,
+    #nomeEquipamento2{
+        width: 90%;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    #abrirChamado,
+    #pesquisar_id_ou_equipamento,
+    #form,
+    #conteudo{
+        font-size: 0.8em;
+    }
+    input{
+        height: 30px;
+    }
+    select{
+        height: 45px;
+    }
+    input[type=submit]{
+        margin-left: 18%;
+    }    
+    input[type=reset]{
+        margin-right: 18%;
+    }
+    input[type=submit], input[type=reset]{
+        width: 90px;
+        height: 45px;
+    }
+    #vlibras{
+        display: none;
+    }
+    #idChamado,
+    #statusChamado,
+    #localAmbiente,
+    #dtAbertura,
+    #dtAtualizacao,
+    #dtPrevisao,
+    #tipoEquipamento,
+    #nomeEquipamento{
+        width: 85%;
+        font-size: 1em;
+    }
+    #localAmbiente2,
+    #tipoEquipamento2,
+    #nomeEquipamento2{
+        width: 85%;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #abrirChamado,
+    #pesquisar_id_ou_equipamento,
+    #form,
+    #conteudo{
+        font-size: 0.7em;
+    }
+    input{
+        height: 30px;
+    }
+    select{
+        height: 45px;
+    }
+    input[type=submit]{
+        margin-left: 18%;
+    }    
+    input[type=reset]{
+        margin-right: 18%;
+    }
+    input[type=submit], input[type=reset]{
+        width: 90px;
+        height: 45px;
+    }
+    #vlibras{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #abrirChamado,
+    #pesquisar_id_ou_equipamento
+    #form,
+    #conteudo{
+        font-size: 0.6em;
+    }
+    input{
+        height: 30px;
+    }
+    select{
+        height: 45px;
+    }
+    input[type=submit]{
+        margin-left: 18%;
+    }    
+    input[type=reset]{
+        margin-right: 18%;
+    }
+    input[type=submit], input[type=reset]{
+        width: 90px;
+        height: 45px;
+    }
+    #vlibras{
+        display: none;
+    }
+}
+/* MQ - Formulários */
 
 /*Rodapé*/
 @media screen and (max-width:665px){
