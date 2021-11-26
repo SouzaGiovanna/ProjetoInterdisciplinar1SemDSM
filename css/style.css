@@ -196,21 +196,21 @@ input, select{
 }
 
 #label-registro{
-    margin-right: 5%;
+    margin-right: 7%;
 }
 
 #senha_label{
     margin-right: 40%;
 }
 
-select{
+#registro{
     width: auto;
     height: 50px;
     margin-right: 2%;
 }
 
 #registro_txt{
-    width: 70%;
+    width: 63%;
 }
 
 #senha, #conf_senha{
@@ -234,6 +234,7 @@ label, legend{
     font-weight: bold;
     font-size: 1.1em;
 }
+
 fieldset{
     border-color: #A31212;
     border-radius: 15px;
@@ -273,6 +274,7 @@ input[type=submit], input[type=reset]{
     content: " *";
     color: red;
 }
+
 select{
     width: 30%;
     height: 55px;
