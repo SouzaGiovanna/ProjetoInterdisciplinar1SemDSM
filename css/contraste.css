@@ -1,0 +1,989 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Formatação do menu de acessibilidade */
+#acessibilidade{
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    margin: auto;
+    padding-bottom: 10px;
+}
+#atalhos{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    list-style: none;
+    /*padding-left: 1%;*/
+}
+#atalhos li{
+    display: inline;
+}
+#atalhos li a{
+    color: yellow;
+}
+#atalhos li a:hover{
+    color: #fff;
+}
+#pgaccess{
+    padding-left: 42%;
+}
+ul #contrastep, ul #scontraste, ul #fonteA, ul #fontea{
+    padding-left: 8px;
+}
+/* Fim da formatação do menu de acessibilidade */
+
+h1{
+    text-align: center;
+}
+#h1_inicio{
+    color: #fff;
+}
+.parag_inicio{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7em;
+    padding-top: 5%;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+/*Menu*/
+header{
+    background-color: #000;
+    padding: 12px 12px 0px 12px;
+    min-height: 20%;
+}
+
+#logos{
+    margin-bottom: 10px;
+
+    /*Essas propriedades servem pra deixar os logos em extremidades opostas da página*/
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+#logo_fatec, #logo_cps{
+    height: 50px;
+}
+
+#nav{
+    width: 100%;
+}
+
+#menu{
+    /*Altura e largura dos itens do menu*/
+    line-height: 20px;
+    font-weight: 500;
+
+    /*Espaçar os itens de forma uniforme pelo tamanho da página*/
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    /*Outras configurações*/
+    list-style-type: none;
+}
+
+.menu_item{
+    display: inline-block;
+    position: relative;
+}
+
+.menu_item a{
+    padding: 12px 14px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    color: yellow;
+    font-size: 1.3em;
+}
+
+#submenu{
+    text-transform: none;
+    display: none;
+    position: absolute;
+    width: 220px;
+    float: left;
+    background-color: #000;
+    list-style-type: none;
+}
+
+.menu_item:hover{
+    background-color: yellow;
+    color: #000;
+    transition: 0.5s;
+}
+
+.menu_item:hover #submenu{
+    display: block;
+}
+
+.menu_item_submenu:hover{
+    background-color: #000;
+    border-left: 4px solid #fff;
+    transition: 0.5s;
+}
+
+/* Breadcrumb */
+.breadcrumb{
+    padding-left: 2%;
+    padding-top: 1%;
+    list-style: none;
+}
+.breadcrumb li{
+    display: inline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
+    color: #fff;
+}
+.breadcrumb li a{
+    color: yellow;
+    text-decoration: none;
+}
+.breadcrumb li+li:before{
+    content: "/\00a0";
+    padding: 6px;
+    color: #fff;
+}
+.breadcrumb li a:hover{
+    color: #000;
+    text-decoration: underline;
+}
+/* Fim BreadCrumb */
+
+/*conteúdo*/
+main{
+    min-height: 574px;
+}
+
+#conteudo,
+#tela-maior,
+#tela-menor{
+    background-color: #000;
+    color: #fff;
+}
+#tela-maior{
+    min-height: 660px;
+    margin: 2% 2% 3.5% 0%;
+}
+
+#tela-menor{
+    min-height: 450px;
+    margin: 0% 5% 0% 5%;
+}
+
+#conteudo_index{
+    background-image: url("../imagens/fundo\ teste\ 2.jpg");
+    background-repeat: no-repeat;
+    padding: 25px;
+    background-position: center;
+    background-size: 100% 100%;
+    background-color: #000;
+  
+}
+
+/*Formulário*/
+#form, #abrirChamado, #pesquisar_id_ou_equipamento{
+    margin: 2%;
+    width: 96%;
+    position: relative;
+}
+
+input, select{
+    width: 99%;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+}
+#idChamado,
+#statusChamado,
+#localAmbiente,
+#dtAbertura,
+#dtAtualizacao,
+#dtPrevisao,
+#tipoEquipamento,
+#nomeEquipamento{
+    width: 97%;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#localAmbiente2,
+#tipoEquipamento2,
+#nomeEquipamento2{
+    width: 97%;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+#label-registro{
+    margin-right: 7%;
+}
+
+#senha_label{
+    margin-right: 40%;
+}
+
+#registro{
+    width: auto;
+    height: 50px;
+    margin-right: 2%;
+}
+
+#registro_txt{
+    width: 63%;
+}
+
+#senha, #conf_senha{
+    width: 45.2%;
+    margin-top: 1.5%;
+}
+
+#email{
+    width: 92%;
+}
+
+#email2{
+    width: 99%;
+}
+
+#nome{
+    margin-top: 1%;
+}
+
+label, legend{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+fieldset{
+    border-color: #fff;
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+
+input[type=submit]{
+    width: 15%;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    margin-left: 30%;
+}
+
+input[type=reset]{
+    width: 15%;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    float: right;
+    margin-right: 30%;
+}
+
+input[type=submit], input[type=reset]{
+    width: 170px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 35px;
+    border: #fff solid 2px;
+    margin-bottom: 1%;
+    margin-top: .5%;
+}
+
+.required:after{
+    content: " *";
+    color: #fff;
+}
+
+select{
+    width: 30%;
+    height: 55px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+textarea{
+    width: 99%;
+    height: auto;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1.2em;
+}
+/* Formatação das tabelas */
+table{
+    width: 100%;
+}
+
+tr{
+    width: 100%;
+}
+
+.td1, .td2, .td3{
+    width: 33%;
+}
+
+th{
+    width: 12.5%;
+    height: 40px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.tdchamados{
+    width: 12.5%;
+    height: 40px;
+    text-align: center;
+}
+
+/* Formatando Botão */
+#agaprovacao,
+#aberto,
+#agresposta,
+#concluido,
+#rejeitado,
+#cancelado,
+#agendado{
+    width: 14%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+#agaprovacao{
+    background-color: #ff6b00;
+}
+#aberto{
+    background-color: #0085ff;
+}
+#agresposta{
+    background-color: #edb054;
+}
+#concluido{
+    background-color: #42e385;
+}
+#rejeitado{
+    background-color: #2d4f4f;
+}
+#cancelado{
+    background-color: #A31212;
+}
+#agendado{
+    background-color: #9f9f9f;
+}
+
+fieldset{
+    border-color: #fff;
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+
+input[type=submit]{
+    width: 15%;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    margin-left: 30%;
+}
+
+input[type=reset]{
+    width: 15%;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    float: right;
+    margin-right: 30%;
+}
+
+input[type=submit], input[type=reset]{
+    width: 170px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 35px;
+    border: #fff solid 2px;
+    margin-bottom: 1%;
+    margin-top: .5%;
+}
+
+input[type=submit]:hover, input[type=reset]:hover{
+    cursor: pointer;
+}
+
+.required:after{
+    content: " *";
+    color: #fff;
+}
+
+.link{
+    padding-left: 5%;
+}
+
+/* Paragrafo de Acessibilidade */
+
+.npaccess, .npfaq{
+    font-size: 1em;
+    padding-left: 2%;
+    padding-bottom: 8px;
+    text-align: justify;
+    font-weight: bold;
+}
+.paccess, .pfaq, .faqmenuli{
+    font-size: 1em;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 8px;
+    text-align: justify;
+}
+
+/* Conteúdo FAQ */
+
+.faqmenuli{
+    padding-left: 3%;
+    font-size: 1.1em;
+}
+
+.faqsubmenuli{
+    padding-left: 8%;
+    padding-top: 10px;
+    text-align: justify;
+}
+
+#menu_faq{
+    list-style: none;
+    padding-top: 2%;
+}
+
+#menu_faq li{
+    position: relative;
+}
+
+#menu_faq li .submenu_faq{
+    position: static;
+    display: none;
+    height: auto;
+}
+
+#menu_faq li:hover img{
+    transition: 1s;
+    transform: rotate(90deg);
+}
+
+#menu_faq li:hover ul{
+    position: relative;
+    display: block;
+    list-style: none;
+}
+
+/* Menu Hamburguer */
+label[for="bt_menu"]{
+    display: none;
+}
+#bt_menu{
+    display: none;
+}
+/* Fim do Menu hamburguer */
+
+/*rodapé*/
+#rodape{
+    background-color: #000;
+    padding: 20px;
+    color: #fff;
+    height: 12em;
+}
+
+#rodape .title_rodape{
+    border-bottom: 3px solid #fff;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#rodape .rodape-col-1{
+    list-style: none;
+    font-size: 13px;
+    width: 100%;
+}
+
+#rodape .rodape-col-1 li{
+    padding-bottom: 15px;
+}
+
+#rodape .rodape-col-1 li a{
+    text-decoration: none;
+    color: yellow;
+}
+
+#rodape .rodape-col-1 li a:hover {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: 0.7s;
+}
+
+#rodape .rodape-col-1 li a:hover .icon{
+    text-decoration: none;
+    filter: invert(100%);
+    color: #fff;
+    font-size: 23px;
+    transition: 0.7s;
+}
+
+#rodape .rodape-col-1 li a .icon{
+    font-size: 20px;
+}
+
+#rodape .sub_title_rodape{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+#rodape .rodape-col-2{
+    list-style: none;
+    width: 100%;
+    margin-left: 40px;
+}
+
+#rodape .rodape-col-2 .title_rodape{
+    border-bottom: 3px solid #fff;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: right;
+}
+
+#rodape .rodape-col-2 #redes-sociais li{
+    display: inline-block;
+    list-style: none;
+}
+
+#redes-sociais{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+#rodape .rodape-col-2 #redes-sociais li a img{
+    width: 60%;
+    margin-top: 5%;
+    margin-bottom: 100%;
+}
+
+#rodape .rodape-col-2 #redes-sociais li a:hover img{
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 100%;
+    transition: 0.5s;
+}
+
+#rodape .rodape-col-2 li p{
+    font-size: 13px;
+    margin-bottom: 3%;
+}
+
+#rodape div{
+    width: 48%;
+    float: left;
+}
+
+/*Media Queries*/
+
+/* MQ Menu Responsivo - Hamburguer */
+@media screen and (max-width: 630px) {
+    #menu{
+        display: none;
+    }
+
+    label[for="bt_menu"]{
+        display: block;
+        
+
+    }
+    #bt_menu:checked ~ #menu{
+        display: inline-table;
+        border: none;
+    }
+
+    .menu_item{
+        position: relative  ;
+        float: left;
+        width: 100%;
+        border: none;
+    }
+    .menu_item a{
+        font-size: 0.9em;
+    }
+ 
+    #submenu{
+        position: static;
+        width: 100%;
+        float: right;
+        border: none;
+    }
+        
+    .menu_item_submenu{
+        position:relative;
+        padding-left: 20%;
+        width: 80%;
+        float: left;
+        display: block;
+        border: none;
+    }
+}
+/* FIM - MQ Menu Responsivo - Hamburguer */
+
+/* MQ - Barra de Acessibilidade */
+@media screen and (max-width: 1440px) {
+
+    #pgaccess{
+        padding-left: 25%;
+    }
+    ul #contrastep, ul #scontraste, ul #fonteA, ul #fontea{
+        padding-left: 5px;
+    }   
+}
+@media screen and (max-width: 1280px) {
+    #pgaccess{
+        padding-left: 20%;
+    }
+    ul li{
+        font-size: 00.88em;
+    }
+    ul #pgaccess, #contrastep, ul #scontraste, ul #fonteA, ul #fontea{
+        font-size: 0.88em;
+    }
+}
+@media screen and (max-width: 1024px) {
+    #pgaccess{
+        padding-left: 10%;
+    }
+    ul li{
+        font-size: 0.8em;
+    }
+    ul #pgaccess, #contrastep, ul #scontraste, ul #fonteA, ul #fontea{
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 630px) {
+
+    #atalhos li{
+        display: none;
+    }
+
+    ul #pgaccess, ul #contrastep, ul #scontraste, ul #fonteA, ul #fontea{
+        padding-left: 2%;
+        display: inline;
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 440px) {
+    ul #pgaccess, ul #contrastep, ul #scontraste, ul #fonteA, ul #fontea{
+        padding-left: 2%;
+        display: inline;
+        font-size: 0.72em;
+    }
+}
+@media screen and (max-width: 414px) {
+    ul #pgaccess, ul #contrastep, ul #scontraste, ul #fonteA, ul #fontea{
+    padding-left: 2%;
+    display: inline;
+    font-size: 0.67em;
+    }
+}
+@media screen and (max-width: 375px) {
+    ul #pgaccess, ul #contrastep, ul #scontraste, ul #fonteA, ul #fontea{
+    padding-left: 2%;
+    display: inline;
+    font-size: 0.6em;
+    }
+    #logo_cps{
+        display: none;
+    }
+}
+@media screen and (max-width: 360px) {
+    ul #pgaccess, ul #contrastep, ul #scontraste, ul #fonteA, ul #fontea{
+    padding-left: 1%;
+    display: inline;
+    font-size: 0.58em;
+   }
+}
+/* FIM - MQ - Barra de Acessibilidade */
+
+/* MQ - Formulários */
+@media screen and (max-width: 1024px) {
+    #abrirChamado,
+    #pesquisar_id_ou_equipamento,
+    #form{
+        font-size: 1.1em;
+    }
+    input{
+        height: 30px;
+    }
+    select{
+        height: 45px;
+    }
+    input[type=submit]{
+        margin-left: 18%;
+    }    
+    input[type=reset]{
+        margin-right: 18%;
+    }
+    input[type=submit], input[type=reset]{
+        width: 135px;
+        height: 45px;
+    }
+    #idChamado,
+    #statusChamado,
+    #localAmbiente,
+    #dtAbertura,
+    #dtAtualizacao,
+    #dtPrevisao,
+    #tipoEquipamento,
+    #nomeEquipamento{
+        width: 93%;
+        font-size: 1.1em;
+    }
+    #localAmbiente2,
+    #tipoEquipamento2,
+    #nomeEquipamento2{
+        width: 93%;
+        font-size: 1.1em;
+    }
+    /* Formatando Botão */
+    #agaprovacao,
+    #aberto,
+    #agresposta,
+    #concluido,
+    #rejeitado,
+    #cancelado,
+    #agendado{
+        width: 12.5%;
+        height: 35px;
+        font-size: 0.6em;
+    }
+}
+@media screen and(max-widt: 630px) {
+    #abrirChamado,
+    #pesquisar_id_ou_equipamento,
+    #form{
+        font-size: 1em;
+    }
+    
+}
+@media screen and (max-width: 540px) {
+    #abrirChamado,
+    #pesquisar_id_ou_equipamento,
+    #form,
+    #conteudo{
+        font-size: 0.9em;
+    }
+    input{
+        height: 30px;
+    }
+    select{
+        height: 45px;
+    }
+    input[type=submit]{
+        margin-left: 18%;
+    }    
+    input[type=reset]{
+        margin-right: 18%;
+    }
+    input[type=submit], input[type=reset]{
+        width: 120px;
+        height: 45px;
+    }
+    #vlibras{
+        display: none;
+    }
+    #idChamado,
+    #statusChamado,
+    #localAmbiente,
+    #dtAbertura,
+    #dtAtualizacao,
+    #dtPrevisao,
+    #tipoEquipamento,
+    #nomeEquipamento{
+        width: 90%;
+        font-size: 1em;
+    }
+    #localAmbiente2,
+    #tipoEquipamento2,
+    #nomeEquipamento2{
+        width: 90%;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    #abrirChamado,
+    #pesquisar_id_ou_equipamento,
+    #form,
+    #conteudo{
+        font-size: 0.8em;
+    }
+    input{
+        height: 30px;
+    }
+    select{
+        height: 45px;
+    }
+    input[type=submit]{
+        margin-left: 18%;
+    }    
+    input[type=reset]{
+        margin-right: 18%;
+    }
+    input[type=submit], input[type=reset]{
+        width: 90px;
+        height: 45px;
+    }
+    #vlibras{
+        display: none;
+    }
+    #idChamado,
+    #statusChamado,
+    #localAmbiente,
+    #dtAbertura,
+    #dtAtualizacao,
+    #dtPrevisao,
+    #tipoEquipamento,
+    #nomeEquipamento{
+        width: 85%;
+        font-size: 1em;
+    }
+    #localAmbiente2,
+    #tipoEquipamento2,
+    #nomeEquipamento2{
+        width: 85%;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #abrirChamado,
+    #pesquisar_id_ou_equipamento,
+    #form,
+    #conteudo{
+        font-size: 0.7em;
+    }
+    input{
+        height: 30px;
+    }
+    select{
+        height: 45px;
+    }
+    input[type=submit]{
+        margin-left: 18%;
+    }    
+    input[type=reset]{
+        margin-right: 18%;
+    }
+    input[type=submit], input[type=reset]{
+        width: 90px;
+        height: 45px;
+    }
+    #vlibras{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #abrirChamado,
+    #pesquisar_id_ou_equipamento
+    #form,
+    #conteudo{
+        font-size: 0.6em;
+    }
+    input{
+        height: 30px;
+    }
+    select{
+        height: 45px;
+    }
+    input[type=submit]{
+        margin-left: 18%;
+    }    
+    input[type=reset]{
+        margin-right: 18%;
+    }
+    input[type=submit], input[type=reset]{
+        width: 90px;
+        height: 45px;
+    }
+    #vlibras{
+        display: none;
+    }
+}
+/* MQ - Formulários */
+
+/*Rodapé*/
+@media screen and (max-width:665px){
+    #rodape{
+        height: 14em;
+    }
+
+    #rodape .rodape-col-2 li p{
+        font-size: 13px;
+        margin-bottom: 10%;
+    }
+}
+
+@media screen and (max-width:550px){
+    #rodape{
+        height: 15em;
+    }
+}
+
+@media screen and (max-width:500px){
+    #rodape{
+        height: 22em;
+    }
+
+    div{
+        width: 100%;
+        padding-left: 0px;
+        display: block;
+    }
+
+    #rodape .rodape-col-2 li p{
+        font-size: 13px;
+        margin-bottom: 1%;
+    }
+
+    #rodape .rodape-col-2 #redes-sociais li a img{
+        width: 60%;
+        margin-top: 5%;
+        margin-bottom: 80%;
+    }
+
+    #rodape .rodape-col-2{
+        list-style: none;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #rodape .rodape-col-2 .title_rodape{
+        border-bottom: 3px solid #fff;
+        margin-bottom: 10px;
+        font-size: 14px;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:395px){
+    #rodape .rodape-col-2{
+        margin-top: 10%;
+    }
+}
