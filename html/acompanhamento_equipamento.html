@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../css/style.css">
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script src="../js/aumentar.js"></script>
+        <script src="../js/contraste.js"></script>
     </head>
     <body>
         <header>
@@ -75,41 +76,48 @@
 
                     <table>
                         <tr>
-                            <td class="td1">
-                                <label for="idChamado">Id Chamado</label><br>
+                            <td><label for="idChamado">Id Chamado</label></td>
+                            <td><label for="statusChamado">Status</label></td>
+                            <td><label for="localAmbiente">Local</label></td>
+                        </tr>
+                        <tr>
+                            <td class="td1">                                
                                 <input type="text" name="idChamado" id="idChamado" disabled value="20">
                             </td>
-                            <td class="td2">
-                                <label for="statusChamado">Status</label><br>
+                            <td class="td2">                                
                                 <input type="text" name="statusChamado" id="statusChamado" disabled value="??">
                             </td>
-                            <td class="td3">
-                                <label for="localAmbiente">Local</label><br>
+                            <td class="td3">                                
                                 <input type="text" name="localAmbiente" id="localAmbiente" disabled value="LABORATÓRIO - 01">
                             </td>
                         </tr>
                         <tr>
-                            <td class="td1">
-                                <label for="dtAbertura">Data Abertura</label><br>
+                            <td><label for="dtAbertura">Data Abertura</label></td>
+                            <td><label for="dtAtulizacao">Data Atualização</label></td>
+                            <td><label for="dtPrevisao">Previsão de Solução</label></td>
+                        </tr>
+                        <tr>
+                            <td class="td1">                                
                                 <input type="text" name="dtAbertura" id="dtAbertura" disabled value="27/11/2021">
                             </td>
-                            <td class="td2">
-                                <label for="dtAtulizacao">Data Atualização</label><br>
+                            <td class="td2">                                
                                 <input type="text" name="dtAtulizacao" id="dtAtualizacao" disabled value="27/11/2021">
                             </td>
                             <td class="td3">
-                                <label for="dtPrevisao">Previsão de Solução</label><br>
                                 <input type="text" name="dtPrevisao" id="dtPrevisao" disabled value="27/11/2021">
                             </td>
                         </tr>
                         <tr>
-                            <td class="td1">
-                                <label for="tipoEquipamento">Tipo de Equipamento</label><br>
+                            <td><label for="tipoEquipamento">Tipo de Equipamento</label></td>
+                            <td></td>
+                            <td><label for="nomeEquipamento">Nome do Equipamento</label></td>
+                        </tr>
+                        <tr>
+                            <td class="td1">                                
                                 <input type="text" name="tipoEquipamento" id="tipoEquipamento" disabled value="COMPUTADOR">
                             </td>
                             <td class="td2"></td>
-                            <td class="td3">
-                                <label for="nomeEquipamento">Nome do Equipamento</label><br>
+                            <td class="td3">                                
                                 <input type="text" name="nomeEquipamento" id="nomeEquipamento" disabled value="PC_FATEC_ZL_001">
                             </td>
                         </tr>
@@ -195,7 +203,7 @@
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 <!--VLibras para acessibilidade de deficientes auditivos-->
-        <div vw class="enabled">
+        <div vw class="enabled" id="vlibras">
             <div vw-access-button class="active"></div>
             <div vw-plugin-wrapper>
             <div class="vw-plugin-top-wrapper"></div>

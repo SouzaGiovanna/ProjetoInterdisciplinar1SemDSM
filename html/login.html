@@ -5,7 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Syscall</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/aumentar.js"></script>
+        <script src="../js/contraste.js"></script>
     </head>
     <body>
         <header>
@@ -28,6 +31,10 @@
         </div>
 
         <nav id="nav">
+            <!--Menu Hamburguer-->
+            <label for="bt_menu"><img src="../imagens/menu.png" alt="menu"></label>
+            <input type="checkbox" id="bt_menu">
+            <!--Fim Menu Hamburguer-->
             <ul id="menu">
                 <li class="menu_item"><a href="index.html">Início</a></li>
                 <li class="menu_item"><a href="abrir_chamado.html">Abrir Chamado</a></li>
@@ -142,10 +149,9 @@
 
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
         <script src="../js/script.js"></script>
         <!--VLibras para acessibilidade de deficientes auditivos-->
-        <div vw class="enabled">
+        <div vw class="enabled" id="vlibras">
             <div vw-access-button class="active"></div>
             <div vw-plugin-wrapper>
             <div class="vw-plugin-top-wrapper"></div>

@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../css/style.css">
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script src="../js/aumentar.js"></script>
+        <script src="../js/contraste.js"></script>
     </head>
     <body>
         <header>
@@ -30,6 +31,10 @@
         </div>
 
         <nav id="nav">
+            <!--Menu Hamburguer-->
+            <label for="bt_menu"><img src="../imagens/menu.png" alt="menu"></label>
+            <input type="checkbox" id="bt_menu">
+            <!--Fim Menu Hamburguer-->
             <ul id="menu">
                 <li class="menu_item"><a href="index.html">Início</a></li>
                 <li class="menu_item"><a href="abrir_chamado.html">Abrir Chamado</a></li>
@@ -51,7 +56,7 @@
             <!--Breadcrumb-->
             <ul class="breadcrumb">
                 <li><a href="index.html">Início</a></li>
-                <li>Login</li>
+                <li>Perfil</li>
             </ul>
             <!--Fim do BreadCrumb-->
 
@@ -160,7 +165,7 @@
         <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
         <script src="../js/script.js"></script>
         <!--VLibras para acessibilidade de deficientes auditivos-->
-        <div vw class="enabled">
+        <div vw class="enabled" id="vlibras">
             <div vw-access-button class="active"></div>
             <div vw-plugin-wrapper>
             <div class="vw-plugin-top-wrapper"></div>
