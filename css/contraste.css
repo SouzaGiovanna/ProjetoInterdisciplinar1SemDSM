@@ -3,6 +3,9 @@
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+body{
+    background-color: #000;
+}
 
 /* Formatação do menu de acessibilidade */
 #acessibilidade{
